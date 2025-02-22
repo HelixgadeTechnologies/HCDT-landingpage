@@ -8,6 +8,10 @@ import healthIcon from "./health.svg";
 import roadIcon from "./road.svg";
 import ictIcon from "./ict.svg";
 
+import instagramIcon from "./instagram.svg";
+import discordIcon from "./discord.svg";
+import twitterIcon from "./twitter.svg";
+
 export {
   beatIcon,
   fileIcon,
@@ -17,4 +21,7 @@ export {
   educationIcon,
   healthIcon,
   ictIcon,
+  discordIcon,
+  twitterIcon,
+  instagramIcon,
 };

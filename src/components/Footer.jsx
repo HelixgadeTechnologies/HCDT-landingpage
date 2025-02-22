@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className=" flex items-center justify-between max-w-7xl py-20 mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className=" flex flex-col md:flex-row md:items-center gap-y-5 justify-between max-w-7xl py-16 md:py-20 mx-auto px-4 sm:px-6 lg:px-8">
       <div className="font-medium text-base text-dark-1">
         HCDT{" "}
         <span className="text-base text-gray-1">
@@ -11,7 +11,7 @@ const Footer = () => {
         </span>
       </div>
 
-      <ul className="flex items-center gap-6">
+      <ul className="flex items-center justify-between md:justify-normal gap-6">
         <li className="text-base text-dark-1">Terms</li>
 
         <li className="text-base text-dark-1">Privacy</li>
