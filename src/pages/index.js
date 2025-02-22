@@ -1,5 +1,6 @@
 import { Roboto, Inter } from "next/font/google";
 import Image from "next/image";
+import Head from "next/head";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -27,6 +28,12 @@ import {
 import { hcdtWorks, categories } from "@/utils/data";
 
 export default function Home() {
+  <Head>
+    <title>HCDT - Home</title>
+    <meta name="description" content="Renaissance Innaovation Labs" />
+    <link rel="icon" href="/favicon.ico" />
+  </Head>;
+
   return (
     <div
       className={`${roboto.className}  font-[family-name:var(--font-roboto)]`}

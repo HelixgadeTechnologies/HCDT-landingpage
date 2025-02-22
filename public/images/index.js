@@ -7,6 +7,7 @@ import roadImg from "./road.png";
 import educationImg from "./education.png";
 import ICTImg from "./ICT.png";
 import healthImg from "./health.png";
+import circlesImg from "./circle.png";
 
 export {
   FeaturedImg,
@@ -18,4 +19,5 @@ export {
   roadImg,
   ICTImg,
   healthImg,
+  circlesImg,
 };
