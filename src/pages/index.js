@@ -4,6 +4,7 @@ import Head from "next/head";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
+  subsets: ["latin"],
   variable: "--font-roboto",
 });
 
@@ -16,7 +17,6 @@ const inter = Inter({
 import Header from "@/components/Header";
 import FAQSection from "@/components/FAQ";
 import Footer from "@/components/Footer";
-import Testimonials from "@/components/Testimonials";
 
 import {
   contributionImg,
@@ -27,19 +27,18 @@ import {
 
 import { hcdtWorks, categories } from "@/utils/data";
 
-export default function Home() {
-  <Head>
-    <title>HCDT - Home</title>
-    <meta name="description" content="Renaissance Innaovation Labs" />
-    <link rel="icon" href="/favicon.ico" />
-  </Head>;
-
+const Home = () => {
   return (
     <div
       className={`${roboto.className}  font-[family-name:var(--font-roboto)]`}
     >
-      <Header />
+      <Head>
+        <title>HCDT - Home</title>
+        <meta name="description" content="Renaissance Innaovation Labs" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
+      <Header />
       <section className=" bg-hero-bg  bg-center  bg-no-repeat py-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1
@@ -76,7 +75,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* project categories */}
       <section className="py-20 bg-off-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -107,7 +105,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="pt-20 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
@@ -150,7 +147,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* real data */}
       <section className="pt-20 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -196,7 +192,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* how it works */}
       <section className="py-20 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -209,7 +204,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* featured projects */}
       <section className="pt-20 lg:pt-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -254,7 +248,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* testimonials */}
       <section className=" my-24">
         {/* <h2 className="font-bold text-xl lg:text-6xl text-center">
@@ -271,9 +264,7 @@ export default function Home() {
 
         <Testimonials /> */}
       </section>
-
       <FAQSection />
-
       {/* HOw can i contribute */}
       <section className="bg-howto-bg bg-center lg:h-[650px] max-w-7xl mx-auto p-10 lg:p-20 mb-20 lg:rounded-3xl">
         <article className="lg:w-1/2 lg:ml-auto">
@@ -292,7 +283,6 @@ export default function Home() {
           </p>
         </article>
       </section>
-
       {/* Contribution steps */}
       <section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -361,7 +351,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Join the HCDT community */}
       <section className="mt-20 max-w-7xl text-center mx-auto px-4 sm:px-6 lg:px-0 bg-community-linear text-white lg:rounded-3xl py-20">
         <h2 className="font-bold text-3xl lg:text-5xl ">
@@ -392,11 +381,10 @@ export default function Home() {
           </svg>
         </button>
       </section>
-
       <Footer />
     </div>
   );
-}
+};
 
 const WorkCard = ({ item }) => {
   return (
@@ -414,3 +402,5 @@ const WorkCard = ({ item }) => {
     </article>
   );
 };
+
+export default Home;
