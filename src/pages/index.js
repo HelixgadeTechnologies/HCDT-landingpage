@@ -14,6 +14,9 @@ const inter = Inter({
 
 import Header from "@/components/Header";
 import FAQSection from "@/components/FAQ";
+import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
+
 import {
   contributionImg,
   FeaturedImg,
@@ -30,12 +33,7 @@ export default function Home() {
     >
       <Header />
 
-      <section
-        style={{
-          backgroundImage: "url('/images/hero.png')",
-        }}
-        className=" bg-hero-linear bg-blend-multiply bg-center  bg-no-repeat py-40"
-      >
+      <section className=" bg-hero-bg  bg-center  bg-no-repeat py-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1
             className={`${inter.variable} lg:w-1/2 text-2xl lg:text-5xl text-white font-black`}
@@ -252,7 +250,7 @@ export default function Home() {
 
       {/* testimonials */}
       <section className=" my-24">
-        <h2 className="font-bold text-xl lg:text-6xl text-center">
+        {/* <h2 className="font-bold text-xl lg:text-6xl text-center">
           Hear From the Community. <br />
           They love us.
         </h2>
@@ -263,6 +261,8 @@ export default function Home() {
           stakeholders, and organizations actively contribute to ensuring
           projects are impactful and meet local needs.
         </p>
+
+        <Testimonials /> */}
       </section>
 
       <FAQSection />
@@ -356,7 +356,7 @@ export default function Home() {
       </section>
 
       {/* Join the HCDT community */}
-      <section className="my-20 max-w-7xl text-center mx-auto px-4 sm:px-6 lg:px-0 bg-community-linear text-white lg:rounded-3xl py-20">
+      <section className="mt-20 max-w-7xl text-center mx-auto px-4 sm:px-6 lg:px-0 bg-community-linear text-white lg:rounded-3xl py-20">
         <h2 className="font-bold text-3xl lg:text-5xl ">
           Join the HCDT community today{" "}
         </h2>
@@ -385,6 +385,8 @@ export default function Home() {
           </svg>
         </button>
       </section>
+
+      <Footer />
     </div>
   );
 }
