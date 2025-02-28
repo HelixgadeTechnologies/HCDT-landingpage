@@ -34,7 +34,10 @@ const Home = () => {
     >
       <Head>
         <title>HCDT - Home</title>
-        <meta name="description" content="Renaissance Innaovation Labs" />
+        <meta
+          name="description"
+          content="HCDT - Empowering Communities Through Transparency & Engagement"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
