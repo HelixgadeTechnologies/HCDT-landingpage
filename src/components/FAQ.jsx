@@ -5,7 +5,7 @@ const data = {
   title: "",
   rows: [
     {
-      title: "What is the Host Community Development Trust (HCDT)?,",
+      title: "What is the Host Community Development Trust (HCDT)?",
       content: `HCDT is a platform designed to improve transparency, accountability, and community participation in development projects. It allows community members to track project progress, report conflicts, and provide feedback on initiatives in their area.`,
     },
     {
@@ -22,7 +22,7 @@ const data = {
     },
     {
       title: "How do I track a project in my community?",
-      content: `Project information is updated in real time as reports are submitted by project managers, community members, and monitoring teams.`,
+      content: `Visit the "Projects" page and use the search or filter function to find projects in your area. Each project has a progress bar, status updates, and detailed reports.`,
     },
   ],
 };
