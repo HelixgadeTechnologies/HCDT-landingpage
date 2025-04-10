@@ -56,7 +56,7 @@ const Home = () => {
 
           <div className="mt-10 flex gap-x-4 lg:w-[55%]">
             <input
-              className=" text-black p-4 text-base w-full lg:flex-1 rounded-lg"
+              className=" text-black p-4 text-base w-full lg:flex-1 rounded-lg outline-none"
               type="text"
               placeholder="Search for projects or communities"
             />
@@ -110,7 +110,7 @@ const Home = () => {
       </section>
       <section className="pt-20 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8 items-center">
             <div className="order-2 lg:order-1">
               <Image
                 src={IndependentImg}
@@ -123,13 +123,8 @@ const Home = () => {
               </h2>
 
               <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">
-                The Independent HCDT M&E Platform is designed to enhance
-                community participation in project monitoring, ensuring that
-                development initiatives are executed effectively. By providing
-                real-time updates, transparency reports, and conflict resolution
-                mechanisms, The Independent HCDT M&E Platform fosters
-                accountability and sustainable progress.
-              </p>
+              The Independent HCDT M&E Platform is designed by Niger Delta Stakeholders Initiative for Community Development and Empowerment (NDSICDE) to promote and enhance relevant stakeholders' (Host Communities, CSOs, government) participation in the implementation, monitoring and evaluation of the Host Community Development Trust. The platform aim at fostering transparency and accountability by tracking and providing real-time data/reports on the status of establishment of HCDTs, level of delivery of projects and initiatives contained in the respective Trusts' development plan, efficiency of the HCDT conflict resolution mechanisms, level of host communities' participation (focusing on gender and social inclusion), and satisfaction with the implementation of the HCDT.</p>
+              <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">The overall goal of the Independent HCDT monitoring and evaluation system is to foster effective implementation of the Host Community Development Trust by providing insightful and evidence-based data for informed decisions.</p>
 
               <button className="flex gap-x-2 text-base font-medium text-blue-2">
                 See how it helped others
@@ -160,14 +155,7 @@ const Home = () => {
               </h2>
 
               <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">
-                Data visualization transforms complex project information into
-                clear, interactive charts and graphs, making it easier to track
-                progress, identify challenges, and drive informed
-                decision-making. At HCDT, we use intuitive dashboards, progress
-                bars, and visual reports to enhance transparency and community
-                engagement. By presenting data in an accessible format,
-                stakeholders can quickly assess project status, monitor conflict
-                resolution, and ensure accountability in development efforts.
+                Data visualization transforms complex project information into clear, interactive charts and graphs, making it easier to track progress, identify challenges, and drive informed decision-making. The platform adopted intuitive, user-friendly and simplified dashboards, progress bars, and visual reports to communicate the status of the various components of the HCDT. By presenting data in an accessible format, stakeholders can quickly assess Key Performance Indicators on HCDT establishment, project delivery status, level of conflict resolution, community participation and satisfaction, impact and sustainability of HCDT in host communities.
               </p>
 
               <button className="flex gap-x-2 text-base font-medium text-blue-2">
@@ -269,7 +257,7 @@ const Home = () => {
       </section>
       <FAQSection />
       {/* HOw can i contribute */}
-      <section className="bg-howto-bg bg-center lg:h-[650px] max-w-7xl mx-auto p-10 lg:p-20 mb-20 lg:rounded-3xl">
+      <section className="bg-howto-bg bg-center bg-cover bg-no-repeat lg:h-[650px] max-w-7xl mx-auto p-10 lg:p-20 mb-20 lg:rounded-3xl">
         <article className="lg:w-1/2 lg:ml-auto">
           <h2 className="font-bold text-xl lg:text-6xl text-white">
             How Can You Contribute?
@@ -284,6 +272,22 @@ const Home = () => {
             project execution. Every contribution, big or small, helps make a
             difference. Join us today and be part of the change!
           </p>
+
+          <button className="mt-9 flex gap-x-2 text-base font-medium text-white">
+            Improve workflow
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+              d="M15.586 10.6574L11.636 6.70741C11.4538 6.5188 11.353 6.2662 11.3553 6.00401C11.3576 5.74181 11.4628 5.491 11.6482 5.30559C11.8336 5.12018 12.0844 5.01501 12.3466 5.01273C12.6088 5.01045 12.8614 5.11125 13.05 5.29341L18.707 10.9504C18.8002 11.0431 18.8741 11.1532 18.9246 11.2746C18.9751 11.3959 19.001 11.526 19.001 11.6574C19.001 11.7888 18.9751 11.9189 18.9246 12.0403C18.8741 12.1616 18.8002 12.2718 18.707 12.3644L13.05 18.0214C12.9578 18.1169 12.8474 18.1931 12.7254 18.2455C12.6034 18.2979 12.4722 18.3255 12.3394 18.3267C12.2066 18.3278 12.0749 18.3025 11.952 18.2522C11.8291 18.2019 11.7175 18.1277 11.6236 18.0338C11.5297 17.9399 11.4555 17.8283 11.4052 17.7054C11.3549 17.5825 11.3296 17.4508 11.3307 17.318C11.3319 17.1852 11.3595 17.054 11.4119 16.932C11.4643 16.81 11.5405 16.6997 11.636 16.6074L15.586 12.6574H6C5.73478 12.6574 5.48043 12.5521 5.29289 12.3645C5.10536 12.177 5 11.9226 5 11.6574C5 11.3922 5.10536 11.1378 5.29289 10.9503C5.48043 10.7628 5.73478 10.6574 6 10.6574H15.586Z"
+              fill="#fff"
+            />
+            </svg>
+          </button>
         </article>
       </section>
       {/* Contribution steps */}
