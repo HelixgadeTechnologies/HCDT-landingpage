@@ -12,7 +12,9 @@ const Footer = () => {
       </div>
 
       <ul className="flex items-center justify-between md:justify-normal gap-6">
-        <li className="text-base text-dark-1">Terms</li>
+        <Link href="/disclaimer">
+          <li className="text-base text-dark-1">Disclaimer</li>
+        </Link>
 
         <li className="text-base text-dark-1">Privacy</li>
 
