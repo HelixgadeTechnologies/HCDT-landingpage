@@ -33,7 +33,7 @@ export default {
           "linear-gradient(99.45deg, #312E81 0%, #1E40AF 0.01%, #1E3A8A 46%, #701A75 96.97%)",
         "howto-bg": "linear-gradient(270deg, rgba(0, 59, 153, 0) 1.67%, rgba(0, 59, 153, 0.2) 17.89%, rgba(0, 59, 153, 0.4) 41.49%, rgba(0, 59, 153, 0.8) 73.52%, rgba(0, 59, 153, 0.9) 100%), url('/images/construction.jpg')",
         "disclaimer-bg": 
-          "linear-gradient(270deg, rgba(0, 59, 153, 0) 1.67%, rgba(0, 59, 153, 0.2) 17.89%, rgba(0, 59, 153, 0.4) 41.49%, rgba(0, 59, 153, 0.8) 73.52%, rgba(0, 59, 153, 0.9) 100%), url('/images/disclaimer-bg.png')"
+          "linear-gradient(270deg, rgba(0, 59, 153, 0) 1.67%, rgba(0, 59, 153, 0.2) 17.89%, rgba(0, 59, 153, 0.4) 41.49%, rgba(0, 59, 153, 0.8) 73.52%, rgba(0, 59, 153, 0.9) 100%), url('/images/disclaimer-bg.jpg')"
       },
     },
   },

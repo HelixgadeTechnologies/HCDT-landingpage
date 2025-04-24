@@ -30,7 +30,7 @@ const Disclaimer = () => {
 
       <div className={` ${inter.className}`}>
         <Header/>
-        <section className=" bg-disclaimer-bg  bg-center  bg-no-repeat py-40 h-[80vh]">
+        <section className="bg-disclaimer-bg bg-center bg-no-repeat bg-cover py-40 h-[80vh]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center mt-14">
                 <h1 className="font-extrabold text-5xl text-white">Disclaimer</h1>
             </div>
