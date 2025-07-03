@@ -33,16 +33,16 @@ const Home = () => {
       className={`${roboto.className}  font-[family-name:var(--font-roboto)]`}
     >
       <Head>
-        <title>HCDT - Home</title>
+        <title>I-HCDT - Home</title>
         <meta
           name="description"
-          content="HCDT - Empowering Communities Through Transparency & Engagement"
+          content="I-HCDT - Empowering Communities Through Transparency & Engagement"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
-      <section className=" bg-hero-bg  bg-center  bg-no-repeat py-40">
+      <section className=" bg-hero-bg bg-cover bg-no-repeat py-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1
             className={`${inter.variable} lg:w-1/2 text-2xl lg:text-5xl text-white font-black`}
@@ -123,7 +123,7 @@ const Home = () => {
               </h2>
 
               <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">
-              The Independent HCDT M&E Platform is designed by Niger Delta Stakeholders Initiative for Community Development and Empowerment (NDSICDE) to promote and enhance relevant stakeholders' (Host Communities, CSOs, government) participation in the implementation, monitoring and evaluation of the Host Community Development Trust. The platform aim at fostering transparency and accountability by tracking and providing real-time data/reports on the status of establishment of HCDTs, level of delivery of projects and initiatives contained in the respective Trusts' development plan, efficiency of the HCDT conflict resolution mechanisms, level of host communities' participation (focusing on gender and social inclusion), and satisfaction with the implementation of the HCDT.</p>
+              The Independent HCDT M&E Platform is designed by Niger Delta Stakeholders Initiative for Community Development and Empowerment (NDSICDE) to promote and enhance relevant stakeholders' (Host Communities, CSOs, government) participation in the implementation, monitoring and evaluation of the Host Community Development Trust. The platform aim at fostering transparency and accountability by tracking and providing real-time data/reports on the status of establishment of I-HCDTs, level of delivery of projects and initiatives contained in the respective Trusts' development plan, efficiency of the I-HCDT conflict resolution mechanisms, level of host communities' participation (focusing on gender and social inclusion), and satisfaction with the implementation of the I-HCDT.</p>
               <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">The overall goal of the Independent HCDT monitoring and evaluation system is to foster effective implementation of the Host Community Development Trust by providing insightful and evidence-based data for informed decisions.</p>
 
               <button className="flex gap-x-2 text-base font-medium text-blue-2">
@@ -155,7 +155,7 @@ const Home = () => {
               </h2>
 
               <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">
-                Data visualization transforms complex project information into clear, interactive charts and graphs, making it easier to track progress, identify challenges, and drive informed decision-making. The platform adopted intuitive, user-friendly and simplified dashboards, progress bars, and visual reports to communicate the status of the various components of the HCDT. By presenting data in an accessible format, stakeholders can quickly assess Key Performance Indicators on HCDT establishment, project delivery status, level of conflict resolution, community participation and satisfaction, impact and sustainability of HCDT in host communities.
+                Data visualization transforms complex project information into clear, interactive charts and graphs, making it easier to track progress, identify challenges, and drive informed decision-making. The platform adopted intuitive, user-friendly and simplified dashboards, progress bars, and visual reports to communicate the status of the various components of the I-HCDT. By presenting data in an accessible format, stakeholders can quickly assess Key Performance Indicators on I-HCDT establishment, project delivery status, level of conflict resolution, community participation and satisfaction, impact and sustainability of I-HCDT in host communities.
               </p>
 
               <button className="flex gap-x-2 text-base font-medium text-blue-2">
@@ -177,7 +177,7 @@ const Home = () => {
             <div>
               <Image
                 src={radarImg}
-                alt="At HCDT, we use intuitive dashboards, progress bars, and visual reports to enhance transparency and community engagement."
+                alt="At I-HCDT, we use intuitive dashboards, progress bars, and visual reports to enhance transparency and community engagement."
               />
             </div>
           </div>
@@ -186,7 +186,7 @@ const Home = () => {
       {/* how it works */}
       <section className="py-20 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-bold text-xl lg:text-[40px] ">How HCDT Works?</h2>
+          <h2 className="font-bold text-xl lg:text-[40px] ">How I-HCDT Works?</h2>
 
           <div className=" mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-8">
             {hcdtWorks.map((item) => (
@@ -247,7 +247,7 @@ const Home = () => {
         </h2>
 
         <p className="mt-6 lg:w-2/3 mx-auto text-base  text-center lg:text-lg text-gray-1">
-          At HCDT, we prioritize transparency, collaboration, and
+          At I-HCDT, we prioritize transparency, collaboration, and
           community-driven development. Through our platform, community members,
           stakeholders, and organizations actively contribute to ensuring
           projects are impactful and meet local needs.
@@ -264,7 +264,7 @@ const Home = () => {
           </h2>
 
           <p className="text-base lg:text-lg text-white mt-6">
-            At HCDT, we believe in collective efforts to drive sustainable
+            At I-HCDT, we believe in collective efforts to drive sustainable
             development in host communities. You can contribute by providing
             feedback and reporting issues on ongoing projects, ensuring
             transparency and accountability. Engage in community discussions to
@@ -326,7 +326,7 @@ const Home = () => {
 
               <p className="text-base lg:text-lg text-gray-1">
                 Help improve transparency and accountability by reporting
-                project issues, conflicts, or community concerns. Use the HCDT
+                project issues, conflicts, or community concerns. Use the I-HCDT
                 platform to provide details, track resolution progress, and
                 ensure stakeholders take necessary action. Your input drives
                 real change!
@@ -352,21 +352,21 @@ const Home = () => {
             <div>
               <Image
                 src={contributionImg}
-                alt="Use the HCDT platform to provide details, track resolution progress, and ensure stakeholders take necessary action"
+                alt="Use the I-HCDT platform to provide details, track resolution progress, and ensure stakeholders take necessary action"
               />
             </div>
           </div>
         </div>
       </section>
-      {/* Join the HCDT community */}
+      {/* Join the I-HCDT community */}
       <section className="mt-20 max-w-7xl text-center mx-auto px-4 sm:px-6 lg:px-0 bg-community-linear text-white lg:rounded-3xl py-20">
         <h2 className="font-bold text-3xl lg:text-5xl ">
-          Join the HCDT community today{" "}
+          Join the I-HCDT community today{" "}
         </h2>
 
         <p className="mt-6 mb-9 text-base lg:text-lg lg:w-2/3 lg:mx-auto">
           Be part of a network dedicated to transparency and development. By
-          joining the HCDT reporting community, you can track projects, share
+          joining the I-HCDT reporting community, you can track projects, share
           insights, report issues, and collaborate with stakeholders to drive
           positive change in your community. Your voice matters—get involved
           today!

@@ -24,7 +24,7 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>HCDT - Contact</title>
+        <title>I-HCDT - Contact</title>
         <meta
           name="description"
           content="Any question or remarks? Just write us a message!"
@@ -95,7 +95,7 @@ const Contact = () => {
                       />
                     </svg>
 
-                    <span>info@hcdtmonitor.org</span>
+                    <span>info@i.hcdtmonitor.org</span>
                   </div>
 
                   <div className="flex items-center gap-x-6">

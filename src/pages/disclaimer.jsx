@@ -20,7 +20,7 @@ const Disclaimer = () => {
   return (
     <>
       <Head>
-        <title>HCDT - Disclaimer</title>
+        <title>I-HCDT - Disclaimer</title>
         <meta
           name="description"
           content="Important information to know about the organization."
@@ -39,18 +39,18 @@ const Disclaimer = () => {
         <section className="space-y-8 md:space-y-12 lg:space-y-16 p-8 md:p-16 lg:p-20">
             <h2 className="text-[32px] md:text-[42px] lg:text-[52px] text-[#0F172A] font-extrabold text-center">Disclaimer</h2>
 
-            <p className="border-t py-6 md:py-8 lg:py-10 font-normal text-[#0F172A] text-base lg:text-lg">The information displayed on this website is derived from primary and secondary sources, including community-based reporters and official government data. This platform functions as an independent tool for tracking the implementation status of the Host Community Development Trusts (HCDT). It also monitors and evaluates projects and initiatives undertaken by these Trusts. The information provided aims to promote transparency, accountability, and stakeholder engagement. However, the platform does not guarantee the completeness or reliability of the information presented. No party associated with the data available on this website assumes responsibility for the accuracy of the information provided or its use by third parties. Stakeholder Democracy Network (SDN), its affiliates, and the platform administrators shall not be liable for any direct, indirect, or consequential damages arising from the use of this platform, including but not limited to errors, omissions, or misinterpretations of data. SDN reserves the right to modify, update, or remove content without prior notice. Continued use of the platform constitutes acceptance of any revised terms. Parties wishing to contest or dispute the information displayed are encouraged to submit their evidence to SDN. By accessing this platform, users acknowledge and agree to the terms outlined in this disclaimer.</p>
+            <p className="border-t py-6 md:py-8 lg:py-10 font-normal text-[#0F172A] text-base lg:text-lg">The information displayed on this website is derived from primary and secondary sources, including community-based reporters and official government data. This platform functions as an independent tool for tracking the implementation status of the Host Community Development Trusts (I-HCDT). It also monitors and evaluates projects and initiatives undertaken by these Trusts. The information provided aims to promote transparency, accountability, and stakeholder engagement. However, the platform does not guarantee the completeness or reliability of the information presented. No party associated with the data available on this website assumes responsibility for the accuracy of the information provided or its use by third parties. Stakeholder Democracy Network (SDN), its affiliates, and the platform administrators shall not be liable for any direct, indirect, or consequential damages arising from the use of this platform, including but not limited to errors, omissions, or misinterpretations of data. SDN reserves the right to modify, update, or remove content without prior notice. Continued use of the platform constitutes acceptance of any revised terms. Parties wishing to contest or dispute the information displayed are encouraged to submit their evidence to SDN. By accessing this platform, users acknowledge and agree to the terms outlined in this disclaimer.</p>
         </section>
 
-        {/* Join the HCDT community */}
+        {/* Join the I-HCDT community */}
       <section className="max-w-7xl text-center mx-auto px-4 sm:px-6 lg:px-0 bg-community-linear text-white lg:rounded-3xl py-20">
         <h2 className="font-bold text-3xl lg:text-5xl ">
-          Join the HCDT community today{" "}
+          Join the I-HCDT community today{" "}
         </h2>
 
         <p className="mt-6 mb-9 text-base lg:text-lg lg:w-2/3 lg:mx-auto">
           Be part of a network dedicated to transparency and development. By
-          joining the HCDT reporting community, you can track projects, share
+          joining the I-HCDT reporting community, you can track projects, share
           insights, report issues, and collaborate with stakeholders to drive
           positive change in your community. Your voice matters—get involved
           today!
