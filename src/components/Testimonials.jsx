@@ -12,14 +12,14 @@ const slides = [
   {
     id: 2,
     content:
-      "Reporting issues and providing feedback has never been this easy. HCDT has bridged the gap between communities and project stakeholders..",
+      "Reporting issues and providing feedback has never been this easy. I-HCDT has bridged the gap between communities and project stakeholders..",
     name: "Ibinabo Atu",
     position: "Community member",
   },
   {
     id: 3,
     content:
-      "HCDT has given us a voice in the development of our community. We can now track projects and hold stakeholders accountable.",
+      "I-HCDT has given us a voice in the development of our community. We can now track projects and hold stakeholders accountable.",
     name: "Emmanuel",
     position: "Community leader",
   },

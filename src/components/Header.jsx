@@ -16,8 +16,9 @@ const Header = () => {
           {/* Logo and Desktop Navigation */}
           <div className="flex justify-between w-full">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-xl lg:text-3xl font-bold">
-                HCDT
+              <Link href="/" className="text-xl lg:text-3xl font-bold relative">
+                <span className="leading-2">I-HCDT</span>
+                <span className="text-xs block text-[#003B99] absolute -bottom-2 tracking-widest">Monitor</span>
               </Link>
             </div>
 
@@ -60,12 +61,12 @@ const Header = () => {
 
             {/* Login and Sign Up Buttons */}
             <div className="hidden md:flex md:items-center">
-              <Link href="/login">
+              <a href="https://frontend-code-c62p.onrender.com/auth/1" target="_blank">
                 <button className="px-4 py-2 text-sm font-medium text-blue-2 mr-2">
                   Log In
                 </button>
-              </Link>
-              <Link href="/sign-up">
+              </a>
+              <a href="https://frontend-code-c62p.onrender.com/auth/2" target="_blank">
                 <button className="pl-6 pr-3 py-2.5 text-base font-medium text-white bg-blue-1 rounded-lg flex items-center gap-x-4">
                   Sign Up Free
                   <svg
@@ -81,7 +82,7 @@ const Header = () => {
                     />
                   </svg>
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
 

@@ -5,15 +5,15 @@ const data = {
   title: "",
   rows: [
     {
-      title: "What is the Host Community Development Trust (HCDT)?",
-      content: `HCDT is a platform designed to improve transparency, accountability, and community participation in development projects. It allows community members to track project progress, report conflicts, and provide feedback on initiatives in their area.`,
+      title: "What is the Host Community Development Trust (I-HCDT)?",
+      content: `I-HCDT is a platform designed to improve transparency, accountability, and community participation in development projects. It allows community members to track project progress, report conflicts, and provide feedback on initiatives in their area.`,
     },
     {
-      title: "Who can use the HCDT platform?",
+      title: "Who can use the I-HCDT platform?",
       content: `The platform is open to all community members, project stakeholders, local government authorities, and corporate partners who want to monitor and engage with development projects.`,
     },
     {
-      title: "Do I need to create an account to use HCDT?",
+      title: "Do I need to create an account to use I-HCDT?",
       content: `No, you can browse projects and reports without an account. However, creating an account allows you to comment, submit reports, and receive updates on project activities.`,
     },
     {
