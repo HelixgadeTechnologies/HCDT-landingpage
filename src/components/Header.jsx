@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
+const link = process.env.NEXT_PUBLIC_BASE_URL;
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -24,33 +26,13 @@ const Header = () => {
 
             {/* Desktop Navigation Links */}
             <ul className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
-              <Link
-                href="/projects"
-                className="px-3 py-2 text-base font-medium text-gray-900"
+              <a
+                href="https://independent-hcdt-monitor-cl-f58fad5f2918.herokuapp.com"
+                target="_blank"
+                className="px-3 py-2 text-base font-medium text-gray-900 relative group hover:cursor-pointer"
               >
-                Projects
-              </Link>
-              <Link
-                href="#"
-                className="px-3 py-2 text-base font-medium text-gray-900 relative group"
-              >
-                Trust
-                <svg
-                  className="ml-1 w-4 h-4 inline-block"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-                {/* Dropdown for Trust - can be expanded */}
-              </Link>
+                Dashboard
+              </a>
               <Link
                 href="/contact"
                 className="px-3 py-2 text-base font-medium text-gray-900"
@@ -61,12 +43,12 @@ const Header = () => {
 
             {/* Login and Sign Up Buttons */}
             <div className="hidden md:flex md:items-center">
-              <a href="https://frontend-code-c62p.onrender.com/auth/1" target="_blank">
+              <a href={`https://independent-hcdt-monitor-cl-f58fad5f2918.herokuapp.com/auth/1`} target="_blank">
                 <button className="px-4 py-2 text-sm font-medium text-blue-2 mr-2">
                   Log In
                 </button>
               </a>
-              <a href="https://frontend-code-c62p.onrender.com/auth/2" target="_blank">
+              <a href={`https://independent-hcdt-monitor-cl-f58fad5f2918.herokuapp.com/auth/2`} target="_blank">
                 <button className="pl-6 pr-3 py-2.5 text-base font-medium text-white bg-blue-1 rounded-lg flex items-center gap-x-4">
                   Sign Up Free
                   <svg
@@ -108,31 +90,10 @@ const Header = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
-              href="/projects"
-              className="block px-3 py-2 text-base font-medium text-gray-900"
-            >
-              Projects
-            </Link>
-            <Link
               href="#"
               className="px-3 py-2 text-base font-medium text-gray-900 relative group"
             >
-              Trust
-              <svg
-                className="ml-1 w-4 h-4 inline-block"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-              {/* Dropdown for Trust - can be expanded */}
+              Dashboard
             </Link>
             <Link
               href="/contact"

@@ -42,7 +42,7 @@ const Home = () => {
       </Head>
 
       <Header />
-      <section className=" bg-hero-bg bg-cover bg-no-repeat py-40">
+      <section className="bg-hero-bg bg-cover bg-no-repeat py-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1
             className={`${inter.variable} lg:w-1/2 text-2xl lg:text-5xl text-white font-black`}
@@ -87,7 +87,7 @@ const Home = () => {
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((item) => (
-              <div className=" ">
+              <div className=" " key={item.id}>
                 <Image
                   className=" rounded-t-lg"
                   src={item.img}
@@ -123,7 +123,7 @@ const Home = () => {
               </h2>
 
               <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">
-              The Independent HCDT M&E Platform is designed by Niger Delta Stakeholders Initiative for Community Development and Empowerment (NDSICDE) to promote and enhance relevant stakeholders' (Host Communities, CSOs, government) participation in the implementation, monitoring and evaluation of the Host Community Development Trust. The platform aim at fostering transparency and accountability by tracking and providing real-time data/reports on the status of establishment of I-HCDTs, level of delivery of projects and initiatives contained in the respective Trusts' development plan, efficiency of the I-HCDT conflict resolution mechanisms, level of host communities' participation (focusing on gender and social inclusion), and satisfaction with the implementation of the I-HCDT.</p>
+              The independent HCDT M&E Platform is <strong>developed</strong> by <strong>Stakeholder Democracy Network (SDN)</strong> locally registered in Nigeria as Stakeholder Initiative for Community Development and Empowerment (NDSICDE) to promote and enhance relevant stakeholders' (Host Communities, CSOs, government) participation in the implementation, monitoring and evaluation of the Host Community Development Trust. The platform aim at fostering transparency and accountability by tracking and providing real-time data/reports on the status of establishment of HCDTs, level of delivery of projects and initiatives contained in the respective Trusts' development plan, efficiency of the HCDT conflict resolution mechanisms, level of host communities' participation (focusing on gender and social inclusion), and satisfaction with the implementation of the HCDT.</p>
               <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">The overall goal of the Independent HCDT monitoring and evaluation system is to foster effective implementation of the Host Community Development Trust by providing insightful and evidence-based data for informed decisions.</p>
 
               <button className="flex gap-x-2 text-base font-medium text-blue-2">
@@ -155,7 +155,7 @@ const Home = () => {
               </h2>
 
               <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">
-                Data visualization transforms complex project information into clear, interactive charts and graphs, making it easier to track progress, identify challenges, and drive informed decision-making. The platform adopted intuitive, user-friendly and simplified dashboards, progress bars, and visual reports to communicate the status of the various components of the I-HCDT. By presenting data in an accessible format, stakeholders can quickly assess Key Performance Indicators on I-HCDT establishment, project delivery status, level of conflict resolution, community participation and satisfaction, impact and sustainability of I-HCDT in host communities.
+                Data visualization transforms complex project information into clear, interactive charts and graphs, making it easier to track progress, identify challenges, and drive informed decision-making. The platform adopted intuitive, user-friendly and simplified dashboards, progress bars, and visual reports to communicate the status of the various components of the HCDT. By presenting data in an accessible format, stakeholders can quickly assess Key Performance Indicators on HCDT establishment, project delivery status, level of conflict resolution, community participation and satisfaction, impact and sustainability of HCDT in host communities.
               </p>
 
               <button className="flex gap-x-2 text-base font-medium text-blue-2">

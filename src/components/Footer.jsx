@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className=" flex flex-col md:flex-row md:items-center gap-y-5 justify-between max-w-7xl py-16 md:py-20 mx-auto px-4 sm:px-6 lg:px-8">
       <div className="font-medium text-base text-dark-1">
-        I-HCDT{" "}
+        SDN{" "}
         <span className="text-base text-gray-1">
           @ 2025. All rights reserved.
         </span>
