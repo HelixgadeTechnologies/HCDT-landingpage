@@ -89,7 +89,7 @@ const Home = () => {
             {categories.map((item) => (
               <div className=" " key={item.id}>
                 <Image
-                  className=" rounded-t-lg"
+                  className="w-full rounded-t-lg"
                   src={item.img}
                   alt={item.title}
                 />
