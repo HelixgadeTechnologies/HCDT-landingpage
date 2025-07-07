@@ -28,7 +28,6 @@ const Header = () => {
             <ul className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
               <a
                 href="https://independent-hcdt-monitor-cl-f58fad5f2918.herokuapp.com"
-                target="_blank"
                 className="px-3 py-2 text-base font-medium text-gray-900 relative group hover:cursor-pointer"
               >
                 Dashboard
@@ -43,12 +42,12 @@ const Header = () => {
 
             {/* Login and Sign Up Buttons */}
             <div className="hidden md:flex md:items-center">
-              <a href={`https://independent-hcdt-monitor-cl-f58fad5f2918.herokuapp.com/auth/1`} target="_blank">
+              <a href={`https://independent-hcdt-monitor-cl-f58fad5f2918.herokuapp.com/auth/1`}>
                 <button className="px-4 py-2 text-sm font-medium text-blue-2 mr-2">
                   Log In
                 </button>
               </a>
-              <a href={`https://independent-hcdt-monitor-cl-f58fad5f2918.herokuapp.com/auth/2`} target="_blank">
+              <a href={`https://independent-hcdt-monitor-cl-f58fad5f2918.herokuapp.com/auth/2`}>
                 <button className="pl-6 pr-3 py-2.5 text-base font-medium text-white bg-blue-1 rounded-lg flex items-center gap-x-4">
                   Sign Up Free
                   <svg
@@ -89,12 +88,12 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link
-              href="#"
+            <a
+              href="https://independent-hcdt-monitor-cl-f58fad5f2918.herokuapp.com"
               className="px-3 py-2 text-base font-medium text-gray-900 relative group"
             >
               Dashboard
-            </Link>
+            </a>
             <Link
               href="/contact"
               className="block px-3 py-2 text-base font-medium text-gray-900"
@@ -104,12 +103,12 @@ const Header = () => {
           </div>
           <div className="pt-4 pb-3 border-t border-gray-200">
             <div className="px-2 space-y-2 ">
-              <Link href="/login">
+              <a href="https://independent-hcdt-monitor-cl-f58fad5f2918.herokuapp.com/auth/1">
                 <button className="px-4 py-2 text-sm font-medium text-blue-2 ">
                   Log In
                 </button>
-              </Link>
-              <Link href="/sign-up">
+              </a>
+              <a href="https://independent-hcdt-monitor-cl-f58fad5f2918.herokuapp.com/auth/2">
                 <button className="pl-6 pr-3 py-2.5 text-base font-medium text-white bg-blue-1 rounded-lg flex items-center gap-x-4">
                   Sign Up Free
                   <svg
@@ -125,7 +124,7 @@ const Header = () => {
                     />
                   </svg>
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
