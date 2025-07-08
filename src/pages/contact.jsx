@@ -78,7 +78,7 @@ const Contact = () => {
                       />
                     </svg>
 
-                    <span>+234 803 456 3789</span>
+                    <span>+234 (0) 7031593783</span>
                   </div>
 
                   <div className="my-10 flex items-center gap-x-6">
@@ -95,7 +95,7 @@ const Contact = () => {
                       />
                     </svg>
 
-                    <span>info@i.hcdtmonitor.org</span>
+                    <span>info@sdn.ngo</span>
                   </div>
 
                   <div className="flex items-center gap-x-6">
@@ -113,8 +113,7 @@ const Contact = () => {
                     </svg>
 
                     <span className="flex-1">
-                      132 Dartmouth Street Boston, Massachusetts 02156 United
-                      States
+                      13 Location Road, Off Tombia Extension, Oroazi, G.R.A. Phase 3, Port Harcourt, Rivers State.
                     </span>
                   </div>
                 </div>
