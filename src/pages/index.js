@@ -54,7 +54,7 @@ const Home = () => {
             View, comment, and track projects happening in your area{" "}
           </p>
 
-          // <div className="mt-10 flex gap-x-4 lg:w-[55%]">
+          {/* // <div className="mt-10 flex gap-x-4 lg:w-[55%]">
           //   <input
           //     className=" text-black p-4 text-base w-full lg:flex-1 rounded-lg outline-none"
           //     type="text"
@@ -75,7 +75,7 @@ const Home = () => {
           //       />
           //     </svg>
           //   </button>
-          // </div>
+          // </div> */}
         </div>
       </section>
       {/* project categories */}
