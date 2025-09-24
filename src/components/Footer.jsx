@@ -23,8 +23,6 @@ const Footer = () => {
           <li className="text-base text-dark-1">Disclaimer</li>
         </Link>
 
-        <li className="text-base text-dark-1">Privacy</li>
-
         <Link href="/contact">
           <li className="text-base text-dark-1">Contact</li>
         </Link>
