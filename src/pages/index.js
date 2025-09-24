@@ -47,7 +47,7 @@ const Home = () => {
           <h1
             className={`${inter.variable} lg:w-1/2 text-2xl lg:text-5xl text-white font-black`}
           >
-            Empowering Communities Through Transparency & Engagement
+            Empowering Communities Through Transparency flex & Engagement
           </h1>
 
           <p className={`${inter.variable} text-white text-base mt-6`}>
