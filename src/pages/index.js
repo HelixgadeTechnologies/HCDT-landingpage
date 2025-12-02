@@ -188,7 +188,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-bold text-xl lg:text-[40px] ">How I-HCDT Works?</h2>
 
-          <div className=" mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-8">
+          <div className=" mt-12 grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-8">
             {hcdtWorks.map((item) => (
               <WorkCard key={item.id} item={item} />
             ))}

@@ -32,13 +32,6 @@ export const hcdtWorks = [
     icon: chartIcon,
     bg: "#DBEAFE",
   },
-  {
-    id: 4,
-    title: "Transparency Reports",
-    content: "Access financial and operational reports for every project.",
-    icon: transparencyIcon,
-    bg: "#EDE9FE",
-  },
 ];
 
 export const categories = [
