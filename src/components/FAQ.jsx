@@ -6,23 +6,23 @@ const data = {
   rows: [
     {
       title: "What is the Host Community Development Trust (I-HCDT)?",
-      content: `I-HCDT is a platform designed to improve transparency, accountability, and community participation in development projects. It allows community members to track project progress, report conflicts, and provide feedback on initiatives in their area.`,
+      content: `I-HCDT is a platform designed to improve transparency, accountability, and community participation in the Host Community Development Trust process. It allows community members to track project progress, report conflicts, and provide feedback on the implementation of development projects in their area.`,
     },
     {
       title: "Who can use the I-HCDT platform?",
-      content: `The platform is open to all community members, project stakeholders, local government authorities, and corporate partners who want to monitor and engage with development projects.`,
+      content: `The platform is available to all host communities, government regulators, oil companies, local government authorities, and other stakeholders interested in monitoring the implementation progress of the Host Community Development Trusts.`,
     },
     {
       title: "Do I need to create an account to use I-HCDT?",
-      content: `No, you can browse projects and reports without an account. However, creating an account allows you to comment, submit reports, and receive updates on project activities.`,
+      content: `You do not need to create an account to use the I-HCDT. You can browse projects and reports without registering. However, having an account allows you to comment, submit reports, and receive updates on project activities.`,
     },
     {
       title: "How frequently is project information updated?",
-      content: `Project information is updated in real time as reports are submitted by project managers, community members, and monitoring teams.`,
+      content: `Project information is updated regularly based on reports submitted by project managers, community members, and monitoring teams. This process ensures that all relevant stakeholders have access to the most accurate and up-to-date data, enhancing transparency and supporting effective decision-making.`,
     },
     {
       title: "How do I track a project in my community?",
-      content: `Visit the "Projects" page and use the search or filter function to find projects in your area. Each project has a progress bar, status updates, and detailed reports.`,
+      content: `To track a project in your community, visit the "Projects" page and utilise the search or filter functions to locate projects in your area. Each project includes a progress bar, status updates, and detailed reports.`,
     },
   ],
 };

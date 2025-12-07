@@ -123,8 +123,7 @@ const Home = () => {
               </h2>
 
               <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">
-              The independent HCDT M&E Platform is <strong>developed</strong> by <strong>Stakeholder Democracy Network (SDN)</strong> locally registered in Nigeria as Stakeholder Initiative for Community Development and Empowerment (NDSICDE) to promote and enhance relevant stakeholders' (Host Communities, CSOs, government) participation in the implementation, monitoring and evaluation of the Host Community Development Trust. The platform aim at fostering transparency and accountability by tracking and providing real-time data/reports on the status of establishment of HCDTs, level of delivery of projects and initiatives contained in the respective Trusts' development plan, efficiency of the HCDT conflict resolution mechanisms, level of host communities' participation (focusing on gender and social inclusion), and satisfaction with the implementation of the HCDT.</p>
-              <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">The overall goal of the Independent HCDT monitoring and evaluation system is to foster effective implementation of the Host Community Development Trust by providing insightful and evidence-based data for informed decisions.</p>
+              The independent Host Community Development Trust (I-HCDT) M&E System is designed to track and provide real-time data on the status and progress of HCDT implementation in the Niger Delta.  It is designed to monitor project delivery, community participation and satisfaction, gender and social inclusion, and the efficiency of the conflict resolution mechanisms in the HCDT process. This Independent HCDT M&E system aims to foster the effective implementation of Host Community Development Trusts by providing insightful, evidence-based data for informed decision-making by HCDTs, communities, the government, and civil society organizations. This platform seeks to strengthen transparency and accountability in the HCDT process and includes features to support this:</p>
 
               <button className="flex gap-x-2 text-base font-medium text-blue-2">
                 See how it helped others
@@ -155,7 +154,7 @@ const Home = () => {
               </h2>
 
               <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">
-                Data visualization transforms complex project information into clear, interactive charts and graphs, making it easier to track progress, identify challenges, and drive informed decision-making. The platform adopted intuitive, user-friendly and simplified dashboards, progress bars, and visual reports to communicate the status of the various components of the HCDT. By presenting data in an accessible format, stakeholders can quickly assess Key Performance Indicators on HCDT establishment, project delivery status, level of conflict resolution, community participation and satisfaction, impact and sustainability of HCDT in host communities.
+                Data visualisation is essential for turning complex project information into clear, interactive charts and graphs. This process facilitates tracking progress, identifying challenges, and enabling informed decision-making. This platform uses intuitive, user-friendly dashboards, progress bars, and visual reports to communicate the status of HCDTs' key components effectively. By presenting data in an accessible manner, stakeholders can promptly assess crucial performance indicators related to the establishment of HCDTs, project delivery status, levels of conflict resolution, and community participation and satisfaction. Additionally, this visualisation method underscores the impact and sustainability of HCDTs within host communities.
               </p>
 
               <button className="flex gap-x-2 text-base font-medium text-blue-2">
@@ -211,15 +210,11 @@ const Home = () => {
               </h2>
 
               <p className="mt-6 text-base lg:text-lg text-gray-1">
-                Explore key development projects making a real impact in host
-                communities. Our featured projects showcase initiatives that
-                drive progress, improve livelihoods, and foster sustainable
-                growth. Stay informed on project milestones, track progress
-                through real-time updates, and see how these efforts contribute
-                to positive change. Discover the projects shaping the future of
-                your community!
+               This platform presents comprehensive information on significant development projects financed by the Host Community Development Trusts in the Niger Delta. The projects highlighted here exemplify initiatives that facilitate progress, enhance livelihoods, and promote sustainable growth. Stakeholders can stay informed about project milestones, monitor advancements through real-time updates, and recognise the contributions of these initiatives to positive societal change. 
               </p>
-
+              <p className="mt-6 text-base lg:text-lg text-gray-1">
+                The I-HCDT Monitoring and Evaluation (M&E) system was developed by Stakeholder Democracy Network (SDN), which is officially registered in Nigeria as the Niger Delta Stakeholder Initiative for Community Development and Empowerment (NDSICDE).
+              </p>
               <button className="mt-9 flex gap-x-2 text-base font-medium text-blue-2">
                 Explore Projects
                 <svg

@@ -146,7 +146,7 @@ const Contact = () => {
                     First Name
                   </label>
                   <input
-                    className="w-full mt-3 border-b border-gray-3"
+                    className="w-full mt-3 border-b border-gray-3 outline-none"
                     type="text"
                   />
                 </div>
@@ -156,7 +156,7 @@ const Contact = () => {
                     Last Name
                   </label>
                   <input
-                    className="w-full mt-3 border-b border-gray-3"
+                    className="w-full mt-3 border-b border-gray-3 outline-none"
                     type="text"
                   />
                 </div>
@@ -166,7 +166,7 @@ const Contact = () => {
                     Email
                   </label>
                   <input
-                    className="w-full mt-3 border-b border-gray-3"
+                    className="w-full mt-3 border-b border-gray-3 outline-none"
                     type="email"
                   />
                 </div>
@@ -176,7 +176,7 @@ const Contact = () => {
                     Phone Number
                   </label>
                   <input
-                    className="w-full mt-3 border-b border-gray-3"
+                    className="w-full mt-3 border-b border-gray-3 outline-none"
                     type="tel"
                   />
                 </div>
@@ -187,7 +187,7 @@ const Contact = () => {
                   </label>
                   <input
                     placeholder="Write your message.."
-                    className="w-full mt-3 border-b border-gray-3"
+                    className="w-full mt-3 border-b border-gray-3 outline-none"
                     type="tel"
                   />
                 </div>
