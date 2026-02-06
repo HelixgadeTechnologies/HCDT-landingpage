@@ -367,7 +367,7 @@ const Home = () => {
           today!
         </p>
 
-        <a href={`https://hcdt-5ba1c14db2e3.herokuapp.com/auth/2`}>
+        <a href={`https://hcdt-7a5ba199a866.herokuapp.com/auth/2`}>
           <button className="px-4 lg:px-6 py-4 text-lg lg:text-2xl font-bold text-white bg-blue-1 shadow-lg mx-auto flex items-center gap-x-4">
             Sign Up Free
             <svg
