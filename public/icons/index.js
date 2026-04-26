@@ -12,6 +12,13 @@ import instagramIcon from "./instagram.svg";
 import discordIcon from "./discord.svg";
 import twitterIcon from "./twitter.svg";
 
+import infraHero from "./infra_hero.png";
+import econHero from "./econ_hero.png";
+import eduHero from "./edu_hero.png";
+import healthHero from "./health_hero.png";
+import envHero from "./env_hero.png";
+import secHero from "./sec_hero.png";
+
 export {
   beatIcon,
   fileIcon,
@@ -24,4 +31,10 @@ export {
   discordIcon,
   twitterIcon,
   instagramIcon,
+  infraHero,
+  econHero,
+  eduHero,
+  healthHero,
+  envHero,
+  secHero,
 };

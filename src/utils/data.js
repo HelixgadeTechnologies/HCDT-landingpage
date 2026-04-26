@@ -6,7 +6,12 @@ import {
   healthIcon,
   ictIcon,
   roadIcon,
-  transparencyIcon,
+  infraHero,
+  econHero,
+  eduHero,
+  healthHero,
+  envHero,
+  secHero,
 } from "../../public/icons";
 import { educationImg, healthImg, ICTImg, roadImg } from "../../public/images";
 
@@ -60,3 +65,70 @@ export const categories = [
     img: ICTImg,
   },
 ];
+
+export const heroCategories = [
+  {
+    id: 1,
+    title: "Infrastructural Development",
+    icon: infraHero,
+  },
+  {
+    id: 2,
+    title: "Economic Empowerment",
+    icon: econHero,
+  },
+  {
+    id: 3,
+    title: "Education Development",
+    icon: eduHero,
+  },
+  {
+    id: 4,
+    title: "Healthcare Development",
+    icon: healthHero,
+  },
+  {
+    id: 5,
+    title: "Environmental Protection",
+    icon: envHero,
+  },
+  {
+    id: 6,
+    title: "Security",
+    icon: secHero,
+  },
+];
+
+export const landingStats = [
+  {
+    id: 1,
+    label: "Incorporated HCDTs",
+    value: "165",
+  },
+  {
+    id: 2,
+    label: "Funded HCDT",
+    value: "50",
+  },
+  {
+    id: 3,
+    label: "Reported Conflict",
+    value: "20",
+  },
+  {
+    id: 4,
+    label: "Resolved Conflict",
+    value: "5",
+  },
+  {
+    id: 5,
+    label: "Economic Empowerment",
+    value: "5",
+  },
+  {
+    id: 6,
+    label: "Education Empowerment",
+    value: "5",
+  },
+];
+
