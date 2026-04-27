@@ -11,7 +11,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         "dark-1": "#0F172A",
-        "blue-1": "#003B99",
+        "blue-1": "#002B70",
         "blue-2": "#2563EB",
         "off-white": "#F1F5F9",
         "gray-1": "#475569",
@@ -27,13 +27,13 @@ export default {
         "team-bg":
           "linear-gradient(96.34deg, #06AB06 0.49%, #122483 100%), url('/images/hero.png')",
         "hero-bg":
-          "linear-gradient(270deg, rgba(0, 59, 153, 0) 1.67%, rgba(0, 59, 153, 0.2) 17.89%, rgba(0, 59, 153, 0.4) 41.49%, rgba(0, 59, 153, 0.8) 73.52%, rgba(0, 59, 153, 0.9) 100%), url('/images/heroimage.png')",
+          "linear-gradient(270deg, rgba(0, 43, 112, 0) 1.67%, rgba(0, 43, 112, 0.2) 17.89%, rgba(0, 43, 112, 0.4) 41.49%, rgba(0, 43, 112, 0.8) 73.52%, rgba(0, 43, 112, 0.9) 100%), url('/images/heroimage.png')",
 
         "community-linear":
           "linear-gradient(99.45deg, #312E81 0%, #1E40AF 0.01%, #1E3A8A 46%, #701A75 96.97%)",
-        "howto-bg": "linear-gradient(270deg, rgba(0, 59, 153, 0) 1.67%, rgba(0, 59, 153, 0.2) 17.89%, rgba(0, 59, 153, 0.4) 41.49%, rgba(0, 59, 153, 0.8) 73.52%, rgba(0, 59, 153, 0.9) 100%), url('/images/construction.jpg')",
+        "howto-bg": "linear-gradient(270deg, rgba(0, 43, 112, 0) 1.67%, rgba(0, 43, 112, 0.2) 17.89%, rgba(0, 43, 112, 0.4) 41.49%, rgba(0, 43, 112, 0.8) 73.52%, rgba(0, 43, 112, 0.9) 100%), url('/images/construction.jpg')",
         "disclaimer-bg": 
-          "linear-gradient(270deg, rgba(0, 59, 153, 0) 1.67%, rgba(0, 59, 153, 0.2) 17.89%, rgba(0, 59, 153, 0.4) 41.49%, rgba(0, 59, 153, 0.8) 73.52%, rgba(0, 59, 153, 0.9) 100%), url('/images/disclaimer-bg.jpg')"
+          "linear-gradient(270deg, rgba(0, 43, 112, 0) 1.67%, rgba(0, 43, 112, 0.2) 17.89%, rgba(0, 43, 112, 0.4) 41.49%, rgba(0, 43, 112, 0.8) 73.52%, rgba(0, 43, 112, 0.9) 100%), url('/images/disclaimer-bg.jpg')"
       },
     },
   },

@@ -56,7 +56,7 @@ const Home = () => {
                   className="brightness-50"
                 />
                 <div className="absolute inset-0 flex flex-col justify-center px-6">
-                  <h1 className={`${inter.variable} text-sm lg:text-base text-white font-black leading-tight max-w-[200px]`}>
+                  <h1 className={`${inter.variable} text-sm lg:text-base text-white font-bold leading-tight max-w-[200px]`}>
                     Empowering Communities Through Transparency & Engagement
                   </h1>
                   <p className="text-white/60 text-[8px] lg:text-[10px] mt-1 italic">
@@ -70,13 +70,17 @@ const Home = () => {
             <div className="w-full lg:w-[60%] flex justify-center lg:justify-end overflow-x-auto pb-2 lg:pb-0">
               <div className="flex items-start gap-2 lg:gap-3 min-w-max">
                 {heroCategories.map((cat) => (
-                  <div key={cat.id} className="flex flex-col items-center group w-24 lg:w-28">
-                    <div className="w-12 h-12 lg:w-16 lg:h-16 bg-white rounded-md flex items-center justify-center mb-2 shadow-sm group-hover:bg-blue-50 transition-colors">
-                      <Image src={cat.icon} alt={cat.title} width={32} height={32} className="lg:w-10 lg:h-10" />
+                  <div key={cat.id} className="flex flex-col items-center group w-[110px]">
+                    {/* Icon Box */}
+                    <div className="w-full h-24 bg-white flex items-center justify-center mb-1 border border-gray-100">
+                      <Image src={cat.icon} alt={cat.title} width={80} height={80} className="object-contain" />
                     </div>
-                    <span className="text-[9px] lg:text-[10px] font-bold text-white text-center leading-tight h-8 flex items-center justify-center px-1">
-                      {cat.title}
-                    </span>
+                    {/* Label Box */}
+                    <div className="w-full h-14 bg-white border-2 border-red-600 rounded-lg flex items-center justify-center px-2 shadow-sm">
+                      <span className="text-[9px] font-bold text-gray-900 text-center leading-tight uppercase">
+                        {cat.title}
+                      </span>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -91,10 +95,10 @@ const Home = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {landingStats.map((stat) => (
               <div key={stat.id} className="flex flex-col items-center text-center">
-                <span className="text-gray-900 font-black text-sm lg:text-base leading-tight h-10 flex items-center justify-center mb-2">
+                <span className="text-gray-900 font-semibold text-sm lg:text-base leading-tight h-10 flex items-center justify-center mb-2">
                   {stat.label}
                 </span>
-                <span className="text-3xl lg:text-5xl font-black text-black">
+                <span className="text-2xl lg:text-4xl font-bold text-black">
                   {stat.value}
                 </span>
               </div>
@@ -202,42 +206,6 @@ const Home = () => {
           </div>
         </div>
       </section> */}
-      <section className="pt-20 lg:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8 items-center">
-            <div className="order-2 lg:order-1">
-              <Image
-                src={IndependentImg}
-                alt="The Independent HCDT M&E Platform is designed to enhance community participation in project monitoring, ensuring that development initiatives are executed effectively"
-              />
-            </div>
-            <article className="order-1 lg:order-2">
-              <h2 className="font-bold text-xl lg:text-5xl ">
-                What is the Independent HCDT Monitoring & Evaluation System?
-              </h2>
-
-              <p className="mt-6 mb-9 text-base lg:text-lg text-gray-1">
-              The independent Host Community Development Trust (I-HCDT) M&E System is designed to track and provide real-time data on the status and progress of HCDT implementation in the Niger Delta.  It is designed to monitor project delivery, community participation and satisfaction, gender and social inclusion, and the efficiency of the conflict resolution mechanisms in the HCDT process. This Independent HCDT M&E system aims to foster the effective implementation of Host Community Development Trusts by providing insightful, evidence-based data for informed decision-making by HCDTs, communities, the government, and civil society organizations. This platform seeks to strengthen transparency and accountability in the HCDT process and includes features to support this:</p>
-
-              {/* <button className="flex gap-x-2 text-base font-medium text-blue-2">
-                See how it helped others
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15.586 10.6574L11.636 6.70741C11.4538 6.5188 11.353 6.2662 11.3553 6.00401C11.3576 5.74181 11.4628 5.491 11.6482 5.30559C11.8336 5.12018 12.0844 5.01501 12.3466 5.01273C12.6088 5.01045 12.8614 5.11125 13.05 5.29341L18.707 10.9504C18.8002 11.0431 18.8741 11.1532 18.9246 11.2746C18.9751 11.3959 19.001 11.526 19.001 11.6574C19.001 11.7888 18.9751 11.9189 18.9246 12.0403C18.8741 12.1616 18.8002 12.2718 18.707 12.3644L13.05 18.0214C12.9578 18.1169 12.8474 18.1931 12.7254 18.2455C12.6034 18.2979 12.4722 18.3255 12.3394 18.3267C12.2066 18.3278 12.0749 18.3025 11.952 18.2522C11.8291 18.2019 11.7175 18.1277 11.6236 18.0338C11.5297 17.9399 11.4555 17.8283 11.4052 17.7054C11.3549 17.5825 11.3296 17.4508 11.3307 17.318C11.3319 17.1852 11.3595 17.054 11.4119 16.932C11.4643 16.81 11.5405 16.6997 11.636 16.6074L15.586 12.6574H6C5.73478 12.6574 5.48043 12.5521 5.29289 12.3645C5.10536 12.177 5 11.9226 5 11.6574C5 11.3922 5.10536 11.1378 5.29289 10.9503C5.48043 10.7628 5.73478 10.6574 6 10.6574H15.586Z"
-                    fill="#2563EB"
-                  />
-                </svg>
-              </button> */}
-            </article>
-          </div>
-        </div>
-      </section>
       {/* featured projects */}
       <section className="pt-20 lg:pt-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -247,7 +215,7 @@ const Home = () => {
                 src={FeaturedImg}
                 alt="Explore key development projects making a real impact in host communities"
               />
-            </div>
+            </div>  
             <article className=" order-1 lg:order-2 flex flex-col justify-center">
               <h2 className="font-bold text-xl lg:text-5xl ">
                 Featured Projects

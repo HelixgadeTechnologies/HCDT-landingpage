@@ -15,12 +15,12 @@ const Header = () => {
 
   const getLinkClasses = (path) => 
     isActive(path) 
-      ? "text-blue-1 font-black text-lg lg:text-xl transition-colors" 
+      ? "text-blue-1 font-bold text-lg lg:text-xl transition-colors" 
       : "text-gray-600 hover:text-blue-1 font-bold text-lg lg:text-xl transition-colors";
 
   const getMobileLinkClasses = (path) =>
     isActive(path)
-      ? "block text-blue-1 font-black text-lg"
+      ? "block text-blue-1 font-bold text-lg"
       : "block text-gray-600 font-bold text-lg";
 
   return (
