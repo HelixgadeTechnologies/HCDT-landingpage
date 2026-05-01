@@ -47,7 +47,7 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             {/* Left side: Shrunken Image box */}
             <div className="w-full lg:w-[35%] relative rounded-lg overflow-hidden shadow-xl border border-white/10">
-              <div className="relative h-[120px] lg:h-[160px]">
+              <div className="relative h-[250px] lg:h-[350px]">
                 <Image
                   src="/images/heroimage.png"
                   alt="Empowering Communities"
@@ -55,11 +55,14 @@ const Home = () => {
                   objectFit="cover"
                   className="brightness-50"
                 />
-                <div className="absolute inset-0 flex flex-col justify-center px-6">
-                  <h1 className={`${inter.variable} text-sm lg:text-base text-white font-bold leading-tight max-w-[200px]`}>
+                <div className="absolute inset-0 flex flex-col justify-center px-6 lg:px-10">
+                  <span className="text-white text-xs lg:text-sm font-bold uppercase tracking-widest mb-2 opacity-80">
+                    Empowering Communities
+                  </span>
+                  <h1 className={`${inter.variable} text-xl lg:text-4xl text-white font-bold leading-tight max-w-[300px] lg:max-w-[400px]`}>
                     Empowering Communities Through Transparency & Engagement
                   </h1>
-                  <p className="text-white/60 text-[8px] lg:text-[10px] mt-1 italic">
+                  <p className="text-white/80 text-[10px] lg:text-lg mt-3 italic max-w-[250px] lg:max-w-[350px]">
                     View, comment, and track projects happening in your area
                   </p>
                 </div>

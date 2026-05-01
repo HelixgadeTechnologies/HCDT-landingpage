@@ -29,7 +29,7 @@ const Header = () => {
       <div className="bg-blue-1 py-2 lg:py-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-center gap-y-4">
           <div className="flex-1 flex justify-center lg:justify-start">
-            <h2 className="text-white text-[10px] lg:text-sm font-bold tracking-wider text-center lg:text-left">
+            <h2 className="text-white text-sm lg:text-lg font-bold tracking-wider text-center lg:text-left">
               INDEPENDENT HOST COMMUNITY DEVELOPMENT TRUST MONITORING AND EVALUATION PLATFORM
             </h2>
           </div>
