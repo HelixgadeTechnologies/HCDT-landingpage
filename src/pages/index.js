@@ -42,7 +42,7 @@ const Home = () => {
           name="description"
           content="I-HCDT - Empowering Communities Through Transparency & Engagement"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon-32x32.png" />
       </Head>
 
       <Header />
