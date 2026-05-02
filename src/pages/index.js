@@ -43,6 +43,8 @@ const Home = () => {
           content="I-HCDT - Empowering Communities Through Transparency & Engagement"
         />
         <link rel="icon" href="/favicon-32x32.png" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q6K874XQ4"></script> 
+        <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)} gtag('js', new Date()); gtag('config', 'G-0Q6K874XQ4'); </script>
       </Head>
 
       <Header />
