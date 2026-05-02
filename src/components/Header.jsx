@@ -37,7 +37,7 @@ const Header = () => {
       title: "Aggregated Dashboard",
     },
     {
-      href: "https://hcdt-7a5ba199a866.herokuapp.com/",
+      href: "https://hcdt-7a5ba199a866.herokuapp.com/trusts",
       title: "Trust Dashboard",
     },
     {
