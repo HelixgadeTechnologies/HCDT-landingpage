@@ -31,6 +31,7 @@ import {
   heroCategories,
   landingStats,
 } from "@/utils/data";
+import { formatNumber } from "@/utils/formatNumber";
 
 const Home = () => {
   return (
@@ -44,16 +45,25 @@ const Home = () => {
         />
         <link rel="icon" href="/favicon-32x32.png" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q6K874XQ4"></script> 
-        <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)} gtag('js', new Date()); gtag('config', 'G-0Q6K874XQ4'); </script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-0Q6K874XQ4');
+            `,
+          }}
+        />
       </Head>
 
       <Header />
       <section className="bg-blue-1">
         <div className="">
-          <div className="flex flex-col lg:flex-row items-center justify-between">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
             {/* Left side: Shrunken Image box */}
-            <div className="w-full lg:w-2/5 relative overflow-hidden">
-              <div className="relative h-[250px] lg:h-[350px]">
+            <div className="w-full lg:w-2/4 relative overflow-hidden">
+              <div className="relative h-[250px] lg:h-[300px]">
                 <Image
                   src="/images/heroimage.png"
                   alt="Empowering Communities"
@@ -79,14 +89,14 @@ const Home = () => {
             </div>
 
             {/* Right side: Compact Icon Grid/Row */}
-            <div className="w-full lg:w-[70%] flex justify-center lg:justify-end overflow-x-auto pt-4 lg:pt-0 pb-4 lg:pb-0 px-4 sm:px-6 lg:pr-8">
+            <div className="w-full lg:w-2/4 flex justify-center lg:justify-end overflow-x-auto pt-4 lg:pt-0 pb-4 lg:pb-0 px-4 sm:px-6 lg:pr-8">
               <div className="flex items-start gap-2 lg:gap-3 min-w-max">
                 {heroCategories.map((cat) => (
                   <div
                     key={cat.id}
-                    className="flex flex-col items-center group w-[110px]">
+                    className="flex flex-col items-center group w-[95px]">
                     {/* Icon Box */}
-                    <div className="w-full h-24 bg-white flex items-center justify-center mb-1 border border-gray-100">
+                    <div className="w-full h-32 bg-white flex items-center justify-center mb-1 border border-gray-100">
                       <Image
                         src={cat.icon}
                         alt={cat.title}
@@ -96,7 +106,7 @@ const Home = () => {
                       />
                     </div>
                     {/* Label Box */}
-                    <div className="w-full h-14 bg-white border-2 border-red-600 rounded-lg flex items-center justify-center px-2 shadow-sm">
+                    <div className="w-full h-16 bg-white border-2 border-red-600 rounded-lg flex items-center justify-center px-2 shadow-sm">
                       <span className="text-[9px] font-bold text-gray-900 text-center leading-tight uppercase">
                         {cat.title}
                       </span>
@@ -110,18 +120,18 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="border-b border-gray-100 py-3 lg:py-6 bg-gray-200">
+      <section className="border-b border-gray-100 py-3 lg:py-10 bg-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {landingStats.map((stat) => (
               <div
                 key={stat.id}
                 className="flex flex-col items-center text-center">
-                <span className="text-gray-900 font-semibold text-sm lg:text-base leading-tight h-10 flex items-center justify-center mb-2">
+                <span className="text-gray-900 font-semibold text-sm lg:text-base leading-tight h-10 flex items-center justify-center mb-4">
                   {stat.label}
                 </span>
                 <span className="text-2xl lg:text-4xl font-bold text-black">
-                  {stat.value}
+                  {formatNumber(stat.value)}
                 </span>
               </div>
             ))}

@@ -103,7 +103,7 @@ export const landingStats = [
   {
     id: 1,
     label: "Incorporated HCDTs",
-    value: "165",
+    value: "165,000,000",
   },
   {
     id: 2,
@@ -122,12 +122,12 @@ export const landingStats = [
   },
   {
     id: 5,
-    label: "Economic Empowerment",
+    label: "Beneficiaries of Economic Empowerment",
     value: "5",
   },
   {
     id: 6,
-    label: "Education Empowerment",
+    label: "Beneficiaries of Education Empowerment",
     value: "5",
   },
 ];
