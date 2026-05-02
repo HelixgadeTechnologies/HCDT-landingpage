@@ -25,13 +25,17 @@ import {
   radarImg,
 } from "../../public/images";
 
-import { hcdtWorks, categories, heroCategories, landingStats } from "@/utils/data";
+import {
+  hcdtWorks,
+  categories,
+  heroCategories,
+  landingStats,
+} from "@/utils/data";
 
 const Home = () => {
   return (
     <div
-      className={`${roboto.className}  font-[family-name:var(--font-roboto)]`}
-    >
+      className={`${roboto.className}  font-[family-name:var(--font-roboto)]`}>
       <Head>
         <title>I-HCDT - Home</title>
         <meta
@@ -42,11 +46,11 @@ const Home = () => {
       </Head>
 
       <Header />
-      <section className="bg-blue-1 py-4 lg:py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-blue-1">
+        <div className="">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             {/* Left side: Shrunken Image box */}
-            <div className="w-full lg:w-[35%] relative rounded-lg overflow-hidden shadow-xl border border-white/10">
+            <div className="w-full lg:w-3/5 relative overflow-hidden">
               <div className="relative h-[250px] lg:h-[350px]">
                 <Image
                   src="/images/heroimage.png"
@@ -55,11 +59,14 @@ const Home = () => {
                   objectFit="cover"
                   className="brightness-50"
                 />
-                <div className="absolute inset-0 flex flex-col justify-center px-6 lg:px-10">
+                {/* Blue overlay from left */}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/50 via-blue-500/30 to-transparent"></div>
+                <div className="absolute inset-0 flex flex-col justify-center px-2 lg:px-4">
                   <span className="text-white text-xs lg:text-sm font-bold uppercase tracking-widest mb-2 opacity-80">
                     Empowering Communities
                   </span>
-                  <h1 className={`${inter.variable} text-xl lg:text-4xl text-white font-bold leading-tight max-w-[300px] lg:max-w-[400px]`}>
+                  <h1
+                    className={`${inter.variable} text-xl lg:text-4xl text-white font-bold leading-tight max-w-[300px] lg:max-w-[400px]`}>
                     Empowering Communities Through Transparency & Engagement
                   </h1>
                   <p className="text-white/80 text-[10px] lg:text-lg mt-3 italic max-w-[250px] lg:max-w-[350px]">
@@ -70,13 +77,21 @@ const Home = () => {
             </div>
 
             {/* Right side: Compact Icon Grid/Row */}
-            <div className="w-full lg:w-[60%] flex justify-center lg:justify-end overflow-x-auto pb-2 lg:pb-0">
+            <div className="w-full lg:w-4/5 flex justify-center lg:justify-end overflow-x-auto pb-2 lg:pb-0 px-4 sm:px-6 lg:pr-8">
               <div className="flex items-start gap-2 lg:gap-3 min-w-max">
                 {heroCategories.map((cat) => (
-                  <div key={cat.id} className="flex flex-col items-center group w-[110px]">
+                  <div
+                    key={cat.id}
+                    className="flex flex-col items-center group w-[110px]">
                     {/* Icon Box */}
                     <div className="w-full h-24 bg-white flex items-center justify-center mb-1 border border-gray-100">
-                      <Image src={cat.icon} alt={cat.title} width={80} height={80} className="object-contain" />
+                      <Image
+                        src={cat.icon}
+                        alt={cat.title}
+                        width={80}
+                        height={80}
+                        className="object-contain"
+                      />
                     </div>
                     {/* Label Box */}
                     <div className="w-full h-14 bg-white border-2 border-red-600 rounded-lg flex items-center justify-center px-2 shadow-sm">
@@ -93,11 +108,13 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-white border-b border-gray-100 py-10 lg:py-16">
+      <section className="border-b border-gray-100 py-3 lg:py-6 bg-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {landingStats.map((stat) => (
-              <div key={stat.id} className="flex flex-col items-center text-center">
+              <div
+                key={stat.id}
+                className="flex flex-col items-center text-center">
                 <span className="text-gray-900 font-semibold text-sm lg:text-base leading-tight h-10 flex items-center justify-center mb-2">
                   {stat.label}
                 </span>
@@ -122,7 +139,13 @@ const Home = () => {
               <div className="flex flex-col xl:flex-row gap-6">
                 <div className="flex-1">
                   <p className="text-sm lg:text-base text-gray-1 leading-relaxed">
-                    Data visualisation is essential for turning complex project information into clear, interactive charts and graphs. This process facilitates tracking progress, identifying challenges, and enabling informed decision-making. This platform uses intuitive, user-friendly dashboards, progress bars, and visual reports to communicate the status of HCDTs' key components effectively.
+                    Data visualisation is essential for turning complex project
+                    information into clear, interactive charts and graphs. This
+                    process facilitates tracking progress, identifying
+                    challenges, and enabling informed decision-making. This
+                    platform uses intuitive, user-friendly dashboards, progress
+                    bars, and visual reports to communicate the status of HCDTs'
+                    key components effectively.
                   </p>
                   {/* <button className="mt-6 flex gap-x-2 text-sm font-medium text-blue-2 group">
                     Check the tools
@@ -161,9 +184,13 @@ const Home = () => {
                   <div key={item.id} className="text-center">
                     <div
                       style={{ backgroundColor: `${item.bg}` }}
-                      className="mx-auto h-16 w-16 lg:h-20 lg:w-20 rounded-full flex items-center justify-center mb-4"
-                    >
-                      <Image src={item.icon} alt={item.title} width={32} height={32} />
+                      className="mx-auto h-16 w-16 lg:h-20 lg:w-20 rounded-full flex items-center justify-center mb-4">
+                      <Image
+                        src={item.icon}
+                        alt={item.title}
+                        width={32}
+                        height={32}
+                      />
                     </div>
                     <h3 className="font-bold text-sm lg:text-base text-dark-1 mb-2">
                       {item.title}
@@ -218,17 +245,27 @@ const Home = () => {
                 src={FeaturedImg}
                 alt="Explore key development projects making a real impact in host communities"
               />
-            </div>  
+            </div>
             <article className=" order-1 lg:order-2 flex flex-col justify-center">
               <h2 className="font-bold text-xl lg:text-5xl ">
                 Featured Projects
               </h2>
 
               <p className="mt-6 text-base lg:text-lg text-gray-1">
-               This platform presents comprehensive information on significant development projects financed by the Host Community Development Trusts in the Niger Delta. The projects highlighted here exemplify initiatives that facilitate progress, enhance livelihoods, and promote sustainable growth. Stakeholders can stay informed about project milestones, monitor advancements through real-time updates, and recognise the contributions of these initiatives to positive societal change. 
+                This platform presents comprehensive information on significant
+                development projects financed by the Host Community Development
+                Trusts in the Niger Delta. The projects highlighted here
+                exemplify initiatives that facilitate progress, enhance
+                livelihoods, and promote sustainable growth. Stakeholders can
+                stay informed about project milestones, monitor advancements
+                through real-time updates, and recognise the contributions of
+                these initiatives to positive societal change.
               </p>
               <p className="mt-6 text-base lg:text-lg text-gray-1">
-                The I-HCDT Monitoring and Evaluation (M&E) system was developed by Stakeholder Democracy Network (SDN), which is officially registered in Nigeria as the Niger Delta Stakeholder Initiative for Community Development and Empowerment (NDSICDE).
+                The I-HCDT Monitoring and Evaluation (M&E) system was developed
+                by Stakeholder Democracy Network (SDN), which is officially
+                registered in Nigeria as the Niger Delta Stakeholder Initiative
+                for Community Development and Empowerment (NDSICDE).
               </p>
               {/* <button className="mt-9 flex gap-x-2 text-base font-medium text-blue-2">
                 Explore Projects
@@ -390,8 +427,7 @@ const Home = () => {
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M15.586 10.6564L11.636 6.70643C11.4538 6.51783 11.353 6.26523 11.3553 6.00303C11.3576 5.74083 11.4628 5.49002 11.6482 5.30461C11.8336 5.1192 12.0844 5.01403 12.3466 5.01176C12.6088 5.00948 12.8614 5.11027 13.05 5.29243L18.707 10.9494C18.8002 11.0421 18.8741 11.1522 18.9246 11.2736C18.9751 11.3949 19.001 11.525 19.001 11.6564C19.001 11.7878 18.9751 11.918 18.9246 12.0393C18.8741 12.1606 18.8002 12.2708 18.707 12.3634L13.05 18.0204C12.9578 18.1159 12.8474 18.1921 12.7254 18.2445C12.6034 18.2969 12.4722 18.3245 12.3394 18.3257C12.2066 18.3268 12.0749 18.3015 11.952 18.2513C11.8291 18.201 11.7175 18.1267 11.6236 18.0328C11.5297 17.9389 11.4555 17.8273 11.4052 17.7044C11.3549 17.5815 11.3296 17.4498 11.3307 17.317C11.3319 17.1842 11.3595 17.053 11.4119 16.931C11.4643 16.809 11.5405 16.6987 11.636 16.6064L15.586 12.6564H6C5.73478 12.6564 5.48043 12.5511 5.29289 12.3635C5.10536 12.176 5 11.9216 5 11.6564C5 11.3912 5.10536 11.1369 5.29289 10.9493C5.48043 10.7618 5.73478 10.6564 6 10.6564H15.586Z"
                 fill="white"
@@ -410,8 +446,7 @@ const WorkCard = ({ item }) => {
     <article className="text-center">
       <div
         style={{ backgroundColor: `${item.bg}` }}
-        className={` ${item.bg}  mx-auto h-24 w-24 rounded-full flex items-center justify-center`}
-      >
+        className={` ${item.bg}  mx-auto h-24 w-24 rounded-full flex items-center justify-center`}>
         <Image src={item.icon} alt={item.title} />
       </div>
       <h3 className="my-4 font-bold text-lg lg:text-2xl text-dark-1">

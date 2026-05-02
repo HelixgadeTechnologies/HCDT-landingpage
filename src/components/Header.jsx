@@ -23,6 +23,29 @@ const Header = () => {
       ? "block text-blue-1 font-bold text-lg"
       : "block text-gray-600 font-bold text-lg";
 
+      const links = [
+        {
+          href: "/",
+          title: "Home",
+        },
+         {
+          href: "/about",
+          title: "About",
+        },
+        {
+          href: "https://hcdt-7a5ba199a866.herokuapp.com/",
+          title: "Aggregated Dashboard",
+        },
+        {
+          href: "https://hcdt-7a5ba199a866.herokuapp.com/",
+          title: "Trust Dashboard",
+        },
+        {
+          href: "/contact",
+          title: "Contact",
+        },
+      ]
+
   return (
     <header className="w-full flex flex-col">
       {/* Top Bar */}
@@ -63,24 +86,11 @@ const Header = () => {
 
             {/* Desktop Nav Links */}
             <ul className="hidden md:flex items-center space-x-8">
-              <Link href="/" className={getLinkClasses("/")}>
-                Home
-              </Link>
-              <Link href="/about" className={getLinkClasses("/about")}>
-                About
-              </Link>
-              <a
-                href="https://hcdt-7a5ba199a866.herokuapp.com/"
-                className="text-gray-600 hover:text-blue-1 font-bold text-lg lg:text-xl transition-colors"
-              >
-                Aggregated Dashboard
-              </a>
-              <a
-                href="https://hcdt-7a5ba199a866.herokuapp.com/"
-                className="text-gray-600 hover:text-blue-1 font-bold text-lg lg:text-xl transition-colors"
-              >
-                Trust Dashboard
-              </a>
+              {links.map((link, idx) => (
+                <Link key={idx} href={link.href} className={getLinkClasses(link.href)}>
+                  { link.title }
+                </Link>
+              ))}
             </ul>
 
             {/* Mobile menu button */}

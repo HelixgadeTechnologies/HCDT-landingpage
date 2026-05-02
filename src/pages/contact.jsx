@@ -37,8 +37,7 @@ const Contact = () => {
         <main className=" mt-24 max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
           <section>
             <h1
-              className={` ${inter.variable} text-center text-blue-1 font-bold text-2xl lg:text-4xl`}
-            >
+              className={` ${inter.variable} text-center text-blue-1 font-bold text-2xl lg:text-4xl`}>
               Contact Us
             </h1>
             <p className={`text-center mt-4 ${inter.variable} `}>
@@ -50,8 +49,7 @@ const Contact = () => {
             <article className="overflow-hidden lg:col-span-3 flex flex-col justify-between  relative p-10 h-[600px]  rounded-xl bg-blue-1 text-white">
               <div className="">
                 <h2
-                  className={` ${inter.variable}  text-white font-bold text-2xl lg:text-4xl`}
-                >
+                  className={` ${inter.variable}  text-white font-bold text-2xl lg:text-4xl`}>
                   Contact Information
                 </h2>
 
@@ -66,8 +64,7 @@ const Contact = () => {
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M20.0002 10.999H22.0002C22.0002 5.869 18.1272 2 12.9902 2V4C17.0522 4 20.0002 6.943 20.0002 10.999Z"
                         fill="white"
@@ -81,31 +78,41 @@ const Contact = () => {
                     <span>+234 (0) 7031593783</span>
                   </div>
 
-                  <div className="my-10 flex items-center gap-x-6">
+                  <div className="my-10 flex items-start gap-x-6">
                     <svg
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M22 4H2V20H22V4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
                         fill="white"
                       />
                     </svg>
-
-                    <span>info@sdn.ngo</span>
+                    <div className="space-y-1">
+                      <a
+                        href="mailto:hcdtmonitor@sdn.ngo"
+                        target="_blank"
+                        className="block">
+                        hcdtmonitor@sdn.ngo
+                      </a>
+                      <a
+                        href="mailto:hcdtmoonitor.sdn@gmail.com"
+                        target="_blank"
+                        className="block">
+                        hcdtmoonitor.sdn@gmail.com
+                      </a>
+                    </div>
                   </div>
 
-                  <div className="flex items-center gap-x-6">
+                  <div className="flex items-start gap-x-6">
                     <svg
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12 1.5C9.81276 1.50258 7.71584 2.3726 6.16923 3.91922C4.62261 5.46584 3.75259 7.56276 3.75001 9.75C3.74739 11.5374 4.33124 13.2763 5.41201 14.7C5.41201 14.7 5.63701 14.9963 5.67376 15.039L12 22.5L18.3293 15.0353C18.3623 14.9955 18.588 14.7 18.588 14.7L18.5888 14.6978C19.669 13.2747 20.2526 11.5366 20.25 9.75C20.2474 7.56276 19.3774 5.46584 17.8308 3.91922C16.2842 2.3726 14.1873 1.50258 12 1.5ZM12 12.75C11.4067 12.75 10.8266 12.5741 10.3333 12.2444C9.83995 11.9148 9.45543 11.4462 9.22837 10.8981C9.00131 10.3499 8.9419 9.74667 9.05765 9.16473C9.17341 8.58279 9.45913 8.04824 9.87869 7.62868C10.2982 7.20912 10.8328 6.9234 11.4147 6.80764C11.9967 6.69189 12.5999 6.7513 13.1481 6.97836C13.6962 7.20542 14.1648 7.58994 14.4944 8.08329C14.8241 8.57664 15 9.15666 15 9.75C14.999 10.5453 14.6826 11.3078 14.1202 11.8702C13.5578 12.4326 12.7954 12.749 12 12.75Z"
                         fill="white"
@@ -113,23 +120,64 @@ const Contact = () => {
                     </svg>
 
                     <span className="flex-1">
-                      13 Location Road, Off Tombia Extension, Oroazi, G.R.A. Phase 3, Port Harcourt, Rivers State.
+                      13 Location Road, Off Tombia Extension, Oroazi, G.R.A.
+                      Phase 3, Port Harcourt, Rivers State.
                     </span>
                   </div>
                 </div>
               </div>
 
-              <div className="  flex gap-x-8">
-                <Image src={twitterIcon} alt="twitter" height={30} width={30} />
+              <div className="flex gap-x-8">
+                {/* X (Twitter) */}
+                <a
+                  href="https://twitter.com/SDNNigerDelta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="text-white">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.627l-5.1-6.694-5.867 6.694h-3.306l7.73-8.835L2.882 2.25h6.793l4.602 6.084 5.267-6.084zM17.534 20.589h1.833L6.455 3.8H4.482l13.052 16.789z" />
+                  </svg>
+                </a>
 
-                <Image
-                  src={instagramIcon}
-                  alt="instagram"
-                  height={30}
-                  width={30}
-                />
+                {/* LinkedIn */}
+                <a
+                  href="https://ng.linkedin.com/company/stakeholder-democracy-network"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="text-white">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                  </svg>
+                </a>
 
-                <Image src={discordIcon} alt="discord" height={30} width={30} />
+                {/* Facebook */}
+                <a
+                  href="https://www.facebook.com/SDNNigerDelta/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="text-white">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                  </svg>
+                </a>
               </div>
 
               <Image
@@ -142,54 +190,53 @@ const Contact = () => {
             <div className="lg:col-span-5 p-6 lg:p-14 ">
               <form className="grid grid-cols-1 lg:grid-cols-2 gap-y-12 gap-x-8">
                 <div>
-                  <label className="text-xs text-black font-medium">
+                  <label className="text-sm text-black font-medium">
                     First Name
                   </label>
                   <input
-                    className="w-full mt-3 border-b border-gray-3 outline-none"
+                    className="w-full mt-3 border-b border-gray-3 outline-none bg-transparent"
                     type="text"
                   />
                 </div>
 
                 <div>
-                  <label className="text-xs text-black font-medium">
+                  <label className="text-sm text-black font-medium">
                     Last Name
                   </label>
                   <input
-                    className="w-full mt-3 border-b border-gray-3 outline-none"
+                    className="w-full mt-3 border-b border-gray-3 outline-none bg-transparent"
                     type="text"
                   />
                 </div>
 
                 <div>
-                  <label className="text-xs text-black font-medium">
+                  <label className="text-sm text-black font-medium">
                     Email
                   </label>
                   <input
-                    className="w-full mt-3 border-b border-gray-3 outline-none"
+                    className="w-full mt-3 border-b border-gray-3 outline-none bg-transparent"
                     type="email"
                   />
                 </div>
 
                 <div>
-                  <label className="text-xs text-black font-medium">
+                  <label className="text-sm text-black font-medium">
                     Phone Number
                   </label>
                   <input
-                    className="w-full mt-3 border-b border-gray-3 outline-none"
+                    className="w-full mt-3 border-b border-gray-3 outline-none bg-transparent"
                     type="tel"
                   />
                 </div>
 
                 <div className="lg:col-span-2 mt-10">
-                  <label className="text-xs text-black font-medium">
+                  <label className="text-sm text-black font-medium">
                     Message
                   </label>
-                  <input
+                  <textarea
                     placeholder="Write your message.."
-                    className="w-full mt-3 border-b border-gray-3 outline-none"
-                    type="tel"
-                  />
+                    className="w-full mt-3 border-b border-gray-3 outline-none resize-none bg-transparent h-[150px]"
+                  ></textarea>
                 </div>
 
                 <div className="flex justify-end lg:col-span-2">
