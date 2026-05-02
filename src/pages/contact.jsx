@@ -6,7 +6,6 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { circlesImg } from "../../public/images";
-import { discordIcon, instagramIcon, twitterIcon } from "../../public/icons";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -34,7 +33,7 @@ const Contact = () => {
 
       <div className={` ${roboto.className} bg-[#FBFBFB]`}>
         <Header />
-        <main className=" mt-24 max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
+        <main className=" mt-12 lg:mt-24 max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
           <section>
             <h1
               className={` ${inter.variable} text-center text-blue-1 font-bold text-2xl lg:text-4xl`}>
@@ -46,7 +45,7 @@ const Contact = () => {
           </section>
 
           <section className="mt-12 grid grid-cols-1 lg:grid-cols-8">
-            <article className="overflow-hidden lg:col-span-3 flex flex-col justify-between  relative p-10 h-[600px]  rounded-xl bg-blue-1 text-white">
+            <article className="overflow-hidden lg:col-span-3 flex flex-col justify-between  relative p-6 lg:p-10 min-h-[500px] lg:h-[600px]  rounded-xl bg-blue-1 text-white">
               <div className="">
                 <h2
                   className={` ${inter.variable}  text-white font-bold text-2xl lg:text-4xl`}>
@@ -57,7 +56,7 @@ const Contact = () => {
                   Say something to start a live chat!{" "}
                 </p>
 
-                <div className="mt-28">
+                <div className="mt-12 lg:mt-28">
                   <div className="flex items-center gap-x-6">
                     <svg
                       width="24"

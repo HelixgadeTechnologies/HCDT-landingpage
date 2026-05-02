@@ -77,7 +77,7 @@ const Home = () => {
             </div>
 
             {/* Right side: Compact Icon Grid/Row */}
-            <div className="w-full lg:w-[70%] flex justify-center lg:justify-end overflow-x-auto pb-2 lg:pb-0 px-4 sm:px-6 lg:pr-8">
+            <div className="w-full lg:w-[70%] flex justify-center lg:justify-end overflow-x-auto pt-4 lg:pt-0 pb-4 lg:pb-0 px-4 sm:px-6 lg:pr-8">
               <div className="flex items-start gap-2 lg:gap-3 min-w-max">
                 {heroCategories.map((cat) => (
                   <div
@@ -175,8 +175,8 @@ const Home = () => {
             </div>
 
             {/* How I-HCDT Works? */}
-            <div className="flex flex-col">
-              <h2 className="font-bold text-xl lg:text-3xl mb-12 lg:mb-16">
+            <div className="flex flex-col mt-10 lg:mt-0">
+              <h2 className="font-bold text-xl lg:text-3xl mb-8 lg:mb-16">
                 How I-HCDT Works?
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -237,9 +237,9 @@ const Home = () => {
         </div>
       </section> */}
       {/* featured projects */}
-      <section className="pt-20 lg:pt-20 bg-white">
+      <section className="pt-12 lg:pt-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-10 lg:gap-y-8">
             <div className="order-2 lg:order-1">
               <Image
                 src={FeaturedImg}
@@ -304,9 +304,9 @@ const Home = () => {
       </section>
       <FAQSection />
       {/* HOw can i contribute */}
-      <section className="bg-howto-bg bg-center bg-cover bg-no-repeat lg:h-[650px] max-w-7xl mx-auto p-10 lg:p-20 mb-20 lg:rounded-3xl">
+      <section className="bg-howto-bg bg-center bg-cover bg-no-repeat min-h-[400px] lg:h-[650px] max-w-7xl mx-auto px-4 py-12 lg:p-20 mb-12 lg:mb-20 lg:rounded-3xl">
         <article className="lg:w-1/2 lg:ml-auto">
-          <h2 className="font-bold text-xl lg:text-6xl text-white">
+          <h2 className="font-bold text-2xl lg:text-6xl text-white">
             How Can You Contribute?
           </h2>
 
@@ -360,13 +360,13 @@ const Home = () => {
 
               {/* mobile */}
               <div className="md:hidden flex items-center justify-between my-6 border border-light-gray rounded-lg">
-                <span className="flex-1 text-center px-2 bg-off-white py-4  font-medium text-base inline-block ">
+                <span className="flex-1 text-center px-1 bg-off-white py-3  font-medium text-[11px] sm:text-sm inline-block ">
                   Submit a Report
                 </span>
-                <span className=" text-center flex-1 border-x border-light-gray py-4  font-medium text-base inline-block ">
+                <span className=" text-center flex-1 border-x border-light-gray py-3  font-medium text-[11px] sm:text-sm inline-block ">
                   Attend
                 </span>
-                <span className=" text-center flex-1 py-4  font-medium text-base inline-block ">
+                <span className=" text-center flex-1 py-3 px-1 font-medium text-[11px] sm:text-sm inline-block ">
                   Volunteer
                 </span>
               </div>
@@ -406,8 +406,8 @@ const Home = () => {
       </section>
 
       {/* Join the I-HCDT community */}
-      <section className="mt-20 max-w-7xl text-center mx-auto px-4 sm:px-6 lg:px-0 bg-community-linear text-white lg:rounded-3xl py-20">
-        <h2 className="font-bold text-3xl lg:text-5xl ">
+      <section className="mt-12 lg:mt-20 max-w-7xl text-center mx-auto px-4 sm:px-6 lg:px-0 bg-community-linear text-white lg:rounded-3xl py-12 lg:py-20">
+        <h2 className="font-bold text-2xl lg:text-5xl ">
           Join the I-HCDT community today{" "}
         </h2>
 

@@ -51,22 +51,22 @@ const Header = () => {
       <header className="w-full flex flex-col">
         {/* Top Bar */}
         <div className="bg-blue-1 py-2 lg:py-3">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-center gap-y-4">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-center gap-y-2 lg:gap-y-4">
             <div className="flex-1 flex justify-center lg:justify-start">
-              <h2 className="text-white text-sm lg:text-lg font-bold tracking-wider text-center lg:text-left">
+              <h2 className="text-white text-xs lg:text-lg font-bold tracking-wider text-center lg:text-left">
                 INDEPENDENT HOST COMMUNITY DEVELOPMENT TRUST MONITORING AND
                 EVALUATION PLATFORM
               </h2>
             </div>
 
-            <div className="flex items-center gap-x-3">
+            <div className="flex items-center gap-x-2 lg:gap-x-3 mt-2 lg:mt-0">
               <a href={`https://hcdt-7a5ba199a866.herokuapp.com/auth/1`}>
-                <button className="px-6 py-1.5 lg:py-2 text-sm font-bold text-white bg-white/20 hover:bg-white/30 rounded transition-all">
+                <button className="px-4 lg:px-6 py-1.5 lg:py-2 text-xs lg:text-sm font-bold text-white bg-white/20 hover:bg-white/30 rounded transition-all">
                   Login
                 </button>
               </a>
               <a href={`https://hcdt-7a5ba199a866.herokuapp.com/auth/2`}>
-                <button className="px-6 py-1.5 lg:py-2 text-sm font-bold text-white bg-blue-2 hover:bg-blue-600 rounded transition-all">
+                <button className="px-4 lg:px-6 py-1.5 lg:py-2 text-xs lg:text-sm font-bold text-white bg-blue-2 hover:bg-blue-600 rounded transition-all">
                   Sign Up Free
                 </button>
               </a>
@@ -116,22 +116,15 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-4 py-4 space-y-4">
-            <Link href="/" className={getMobileLinkClasses("/")}>
-              Home
-            </Link>
-            <Link href="/about" className={getMobileLinkClasses("/about")}>
-              About
-            </Link>
-            <a
-              href="https://hcdt-7a5ba199a866.herokuapp.com/"
-              className="block text-gray-600 font-bold text-lg">
-              Aggregated Dashboard
-            </a>
-            <a
-              href="https://hcdt-7a5ba199a866.herokuapp.com/"
-              className="block text-gray-600 font-bold text-lg">
-              Trust Dashboard
-            </a>
+            {links.map((link, idx) => (
+              <Link
+                key={idx}
+                href={link.href}
+                className={getMobileLinkClasses(link.href)}
+                onClick={() => setIsMenuOpen(false)}>
+                {link.title}
+              </Link>
+            ))}
           </div>
         </div>
       )}

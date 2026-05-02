@@ -30,9 +30,9 @@ const Disclaimer = () => {
 
       <div className={` ${inter.className}`}>
         <Header/>
-        <section className="bg-disclaimer-bg bg-center bg-no-repeat bg-cover py-40 h-[75vh]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center mt-14">
-                <h1 className="font-extrabold text-5xl text-white">Disclaimer</h1>
+        <section className="bg-disclaimer-bg bg-center bg-no-repeat bg-cover py-24 lg:py-40 min-h-[50vh] lg:h-[75vh]">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center mt-8 lg:mt-14">
+                <h1 className="font-extrabold text-3xl lg:text-5xl text-white">Disclaimer</h1>
             </div>
         </section>
 
@@ -43,8 +43,8 @@ const Disclaimer = () => {
         </section>
 
         {/* Join the I-HCDT community */}
-      <section className="max-w-7xl text-center mx-auto px-4 sm:px-6 lg:px-0 bg-community-linear text-white lg:rounded-3xl py-20">
-        <h2 className="font-bold text-3xl lg:text-5xl ">
+      <section className="max-w-7xl text-center mx-auto px-4 sm:px-6 lg:px-0 bg-community-linear text-white lg:rounded-3xl py-12 lg:py-20">
+        <h2 className="font-bold text-2xl lg:text-5xl ">
           Join the I-HCDT community today{" "}
         </h2>
 

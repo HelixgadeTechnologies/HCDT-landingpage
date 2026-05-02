@@ -46,8 +46,8 @@ const config = {
 
 const FAQSection = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-      <h2 className="font-bold text-xl lg:text-6xl text-center mb-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 lg:mb-20">
+      <h2 className="font-bold text-2xl lg:text-5xl text-center mb-8 lg:mb-20">
         Frequently asked questions
       </h2>
       <Faq data={data} styles={styles} config={config} />
