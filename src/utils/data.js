@@ -1,16 +1,16 @@
 import {
   beatIcon,
   chartIcon,
+  econHero,
   educationIcon,
+  eduHero,
+  envHero,
   fileIcon,
+  healthHero,
   healthIcon,
   ictIcon,
-  roadIcon,
   infraHero,
-  econHero,
-  eduHero,
-  healthHero,
-  envHero,
+  roadIcon,
   secHero,
 } from "../../public/icons";
 import { educationImg, healthImg, ICTImg, roadImg } from "../../public/images";
@@ -103,32 +103,32 @@ export const landingStats = [
   {
     id: 1,
     label: "Incorporated HCDTs",
-    value: "165,000,000",
+    value: "0",
   },
   {
     id: 2,
     label: "Funded HCDT",
-    value: "50",
+    value: "0",
   },
   {
     id: 3,
     label: "Reported Conflict",
-    value: "20",
+    value: "0",
   },
   {
     id: 4,
     label: "Resolved Conflict",
-    value: "5",
+    value: "0",
   },
   {
     id: 5,
     label: "Beneficiaries of Economic Empowerment",
-    value: "5",
+    value: "0",
   },
   {
     id: 6,
     label: "Beneficiaries of Education Empowerment",
-    value: "5",
+    value: "0",
   },
 ];
 

@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import CountUp from "react-countup";
 import { Roboto, Inter } from "next/font/google";
 import Image from "next/image";
 import Head from "next/head";
@@ -34,6 +36,45 @@ import {
 import { formatNumber } from "@/utils/formatNumber";
 
 const Home = () => {
+  const [stats, setStats] = useState(landingStats);
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const response = await fetch(
+          "https://hcdtbackend-3862d8d51614.herokuapp.com/api/dashboard/summary"
+        );
+        const json = await response.json();
+        if (json.success) {
+          const apiData = json.data;
+          const updatedStats = landingStats.map((stat) => {
+            switch (stat.label) {
+              case "Incorporated HCDTs":
+                return { ...stat, value: apiData.trustCacCount };
+              case "Funded HCDT":
+                return { ...stat, value: apiData.trustFundsCount };
+              case "Reported Conflict":
+                return { ...stat, value: apiData.totalConflicts };
+              case "Resolved Conflict":
+                return { ...stat, value: apiData.resolvedConflicts };
+              case "Beneficiaries of Economic Empowerment":
+                return { ...stat, value: apiData.grandTotalEmployment };
+              case "Beneficiaries of Education Empowerment":
+                return { ...stat, value: apiData.totalHostCommunityContracted };
+              default:
+                return stat;
+            }
+          });
+          setStats(updatedStats);
+        }
+      } catch (error) {
+        console.error("Error fetching stats:", error);
+      }
+    };
+
+    fetchStats();
+  }, []);
+
   return (
     <div
       className={`${roboto.className}  font-[family-name:var(--font-roboto)]`}>
@@ -123,7 +164,7 @@ const Home = () => {
       <section className="border-b border-gray-100 py-3 lg:py-10 bg-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {landingStats.map((stat) => (
+            {stats.map((stat) => (
               <div
                 key={stat.id}
                 className="flex flex-col items-center text-center">
@@ -131,7 +172,11 @@ const Home = () => {
                   {stat.label}
                 </span>
                 <span className="text-2xl lg:text-4xl font-bold text-black">
-                  {formatNumber(stat.value)}
+                  <CountUp
+                    end={Number(stat.value)}
+                    duration={2.5}
+                    separator=","
+                  />
                 </span>
               </div>
             ))}
