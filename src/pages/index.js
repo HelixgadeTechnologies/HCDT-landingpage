@@ -103,7 +103,7 @@ const Home = () => {
         <div className="">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
             {/* Left side: Shrunken Image box */}
-            <div className="w-full lg:w-2/4 relative overflow-hidden">
+            <div className="w-full lg:w-2/5 relative overflow-hidden">
               <div className="relative h-[250px] lg:h-[300px]">
                 <Image
                   src="/images/heroimage.png"
@@ -130,12 +130,12 @@ const Home = () => {
             </div>
 
             {/* Right side: Compact Icon Grid/Row */}
-            <div className="w-full lg:w-2/4 flex justify-center lg:justify-end overflow-x-auto pt-4 lg:pt-0 pb-4 lg:pb-0 px-4 sm:px-6 lg:pr-8">
+            <div className="w-full lg:w-3/5 flex justify-center lg:justify-end overflow-x-auto pt-4 lg:pt-0 pb-4 lg:pb-0 px-4 sm:px-6 lg:pr-8">
               <div className="flex items-start gap-2 lg:gap-3 min-w-max">
                 {heroCategories.map((cat) => (
                   <div
                     key={cat.id}
-                    className="flex flex-col items-center group w-[90px]">
+                    className="flex flex-col items-center group w-[95px]">
                     {/* Icon Box */}
                     <div className="w-full h-32 bg-white flex items-center justify-center mb-1 border border-gray-100">
                       <Image
