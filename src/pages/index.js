@@ -135,7 +135,7 @@ const Home = () => {
                 {heroCategories.map((cat) => (
                   <div
                     key={cat.id}
-                    className="flex flex-col items-center group w-[95px]">
+                    className="flex flex-col items-center group w-[90px]">
                     {/* Icon Box */}
                     <div className="w-full h-32 bg-white flex items-center justify-center mb-1 border border-gray-100">
                       <Image
